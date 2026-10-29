@@ -410,6 +410,14 @@ a {
   font-weight: 500;
 }
 
+.hero-subtext-desktop {
+  display: inline;
+}
+
+.hero-subtext-mobile {
+  display: none;
+}
+
 .hero-plan-tabs-wrap {
   display: inline-flex;
   align-items: center;
@@ -2988,83 +2996,101 @@ a {
 
   /* HERO SECTION ON MOBILE - PERFECT FIT & SPACING */
   .hero-rentq-section {
-    height: auto;
-    min-height: calc(100svh - 60px);
-    min-height: calc(100dvh - 60px);
-    max-height: none;
+    position: relative;
+    width: 100%;
+    height: calc(100svh - 60px);
+    height: calc(100dvh - 60px);
+    min-height: 520px;
+    max-height: 760px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    position: relative;
     overflow: hidden;
-    background: linear-gradient(180deg, #cde3f5 0%, #e1effa 30%, #f0f6fb 55%, #fbf8f5 100%);
+    background-color: #f7ede4;
     padding-bottom: 0;
   }
 
   .hero-rentq-overlay-content {
-    padding-top: 18px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 0;
-    z-index: 4;
     position: relative;
+    z-index: 4;
+    padding-top: clamp(14px, 2.8vh, 22px);
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .rentq-main-heading {
-    font-size: 1.48rem;
-    line-height: 1.22;
-    max-width: 330px;
+    font-size: clamp(1.36rem, 5.2vw, 1.58rem);
+    line-height: 1.2;
+    max-width: 310px;
     margin: 0 auto 4px auto;
     letter-spacing: -0.02em;
     color: #0f172a;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.7);
   }
 
   .heading-accent-line {
-    width: 42px;
+    width: 36px;
     height: 3px;
-    margin: 5px auto 10px auto;
+    background-color: #f59e0b;
+    border-radius: 2px;
+    margin: 4px auto 8px auto;
+  }
+
+  .hero-subtext-desktop {
+    display: none !important;
+  }
+
+  .hero-subtext-mobile {
+    display: inline !important;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #1e293b;
+    line-height: 1.35;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.85);
   }
 
   .hero-rentq-subtext {
-    font-size: 0.82rem;
-    line-height: 1.4;
-    max-width: 320px;
-    margin: 0 auto 14px auto;
-    color: #334155;
+    max-width: 290px;
+    margin: 0 auto 10px auto;
   }
 
   .hero-plan-tabs-wrap {
-    padding: 4px 6px;
+    padding: 3px 5px;
     gap: 4px;
-    margin-bottom: 14px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 8px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
     background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
   }
 
   .hero-plan-tab-btn {
-    padding: 6px 12px;
-    font-size: 0.78rem;
-    gap: 5px;
+    padding: 6px 11px;
+    font-size: 0.76rem;
+    gap: 4px;
   }
 
   .hero-plan-tab-badge {
-    font-size: 0.62rem;
-    padding: 1px 6px;
+    font-size: 0.6rem;
+    padding: 1px 5px;
   }
 
-  /* HERO BACKGROUND IMAGE ON MOBILE - PERFECT FULL CAR VIEW */
+  /* HERO BACKGROUND IMAGE ON MOBILE - SITS AS TRUE BACKGROUND BEHIND CONTENT */
   .hero-rentq-bg-wrap {
-    position: relative;
+    position: absolute;
+    inset: 0;
     width: 100%;
-    height: clamp(280px, 48vh, 380px);
-    margin-top: auto;
-    top: auto;
-    left: auto;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 0;
+    display: block;
     z-index: 1;
     pointer-events: none;
   }
@@ -3073,10 +3099,10 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 48% bottom;
+    object-position: center bottom;
     display: block;
-    mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.85) 12%, black 28%);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.85) 12%, black 28%);
+    mask-image: none !important;
+    -webkit-mask-image: none !important;
   }
 
   .fast-booking-gold-card {
