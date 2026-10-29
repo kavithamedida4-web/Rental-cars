@@ -380,6 +380,23 @@ export default function Home() {
   const handleBookingSubmit = (e) => {
     e.preventDefault();
     setIsBookedSuccess(true);
+
+    if (selectedCarModal) {
+      const modalMessage = `*NEW CAR RESERVATION - RENC HYDERABAD*
+• Car: ${selectedCarModal.name}
+• Transmission: ${selectedCarModal.transmission}
+• Plan: ${durationPlan === "monthly" ? "Monthly Subscription" : durationPlan === "weekly" ? "Weekly 7-Day" : "Daily Rental"}
+• Rate: ${durationPlan === "monthly" ? selectedCarModal.priceMonthly : durationPlan === "weekly" ? selectedCarModal.priceWeekly : selectedCarModal.priceDaily}/day
+• Pickup Location: ${pickupLocation}`;
+
+      const modalWaUrl = `https://wa.me/919642642604?text=${encodeURIComponent(modalMessage)}`;
+      setTimeout(() => {
+        if (typeof window !== "undefined") {
+          window.location.href = modalWaUrl;
+        }
+      }, 700);
+    }
+
     setTimeout(() => {
       setIsBookedSuccess(false);
       setSelectedCarModal(null);
@@ -397,9 +414,9 @@ export default function Home() {
 • Pickup Location: ${fastBookingForm.location}
 • Requirement & Notes: ${fastBookingForm.notes || "Standard rental inquiry"}`;
 
-    const waUrl = `https://wa.me/919100024724?text=${encodeURIComponent(message)}`;
+    const waUrl = `https://wa.me/919642642604?text=${encodeURIComponent(message)}`;
     if (typeof window !== "undefined") {
-      window.open(waUrl, "_blank");
+      window.location.href = waUrl;
     }
   };
 
@@ -461,7 +478,7 @@ export default function Home() {
             <a href="#gallery" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Gallery</a>
             <a href="#contact" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Contact</a>
             <a
-              href="tel:+919100024724"
+              href="tel:+919642642604"
               onClick={() => setMobileMenuOpen(false)}
               style={{
                 display: "inline-flex",
@@ -479,7 +496,7 @@ export default function Home() {
               }}
             >
               <Phone size={15} />
-              <span>Call Dispatch: +91 91000 24724</span>
+              <span>Call Dispatch: +91 96426 42604</span>
             </a>
           </div>
         )}
@@ -1428,7 +1445,7 @@ export default function Home() {
                     </p>
                     <div className="booking-success-actions">
                       <a
-                        href={`https://wa.me/919100024724?text=${encodeURIComponent(
+                        href={`https://wa.me/919642642604?text=${encodeURIComponent(
                           `*RENC HYDERABAD INQUIRY*\nName: ${fastBookingForm.name}\nPhone: ${fastBookingForm.phone}\nService: ${fastBookingForm.service}\nLocation: ${fastBookingForm.location}\nNotes: ${fastBookingForm.notes}`
                         )}`}
                         target="_blank"
@@ -1799,8 +1816,8 @@ export default function Home() {
                 <div className="footer-contact-row">
                   <Phone size={18} className="footer-contact-icon" />
                   <div className="footer-contact-text">
-                    <div><a href="tel:+919100024724" itemProp="telephone">+91 91000 24724</a></div>
-                    <div><a href="tel:+919100247365">+91 9100-247-365</a></div>
+                    <div><a href="tel:+919642642604" itemProp="telephone">+91 96426 42604</a></div>
+                    <div><a href="tel:+919642642604">+91 96426 42604</a></div>
                   </div>
                 </div>
 
@@ -1854,7 +1871,7 @@ export default function Home() {
 
       {/* Floating Chat With Us Button */}
       <a
-        href="https://wa.me/919100024724?text=Hello%20RENC%2C%20I%20want%20to%20rent%20a%20car"
+        href="https://wa.me/919642642604?text=Hello%20RENC%2C%20I%20want%20to%20rent%20a%20car"
         target="_blank"
         rel="noopener noreferrer"
         className="floating-chat-with-us"
