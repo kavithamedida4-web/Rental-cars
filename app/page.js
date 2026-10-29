@@ -511,7 +511,7 @@ export default function Home() {
         <section className="hero-rentq-section" id="hero">
           {/* Responsive Hero Background Image */}
           <picture className="hero-rentq-bg-wrap">
-            <source media="(max-width: 768px)" srcSet="/images/hero-fleet-mobile.png" />
+            <source media="(max-width: 768px)" srcSet="/images/hero-fleet-mobile.jpg" />
             <img
               src="/images/hero-fleet-4k.png"
               alt="RENC lineup of modern rental cars in Hyderabad: hatchbacks, sedans, compact SUVs and luxury cars"
