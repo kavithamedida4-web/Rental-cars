@@ -1191,17 +1191,11 @@ export default function Home() {
             {/* Header matching Image 2 */}
             <div className="fleet-showcase-header">
               <h2 className="fleet-showcase-title">
-                Daily, Weekly &amp;<br className="heading-br-desktop" />
-                Monthly Car Rentals In<br className="heading-br-desktop" />
-                Hyderabad
+                Daily, Weekly &amp; Monthly Car Rentals In Hyderabad
               </h2>
               <div className="fleet-showcase-accent-bar" />
               <p className="fleet-showcase-subtext">
-                Explore Hyderabad&apos;s most popular, top-demanding self drive cars with{" "}
-                <strong>Manual &amp; Automatic</strong> transmissions. Choose between{" "}
-                <strong>Daily Deals</strong>, <strong>Weekly Rentals</strong>, or{" "}
-                <strong>Monthly Subscriptions</strong> with Security Deposit and
-                doorstep delivery. Enquire now for custom rates and instant delivery.
+                Explore top self-drive cars in Hyderabad with Manual &amp; Automatic transmissions on flexible Daily, Weekly, or Monthly plans.
               </p>
             </div>
 
