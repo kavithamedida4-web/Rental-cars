@@ -3086,6 +3086,8 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background: radial-gradient(ellipse 96% 75% at 50% 30%, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.2) 65%, transparent 100%);
+    border-radius: 24px;
   }
 
   .heading-mobile-break {
@@ -3099,8 +3101,8 @@ a {
     max-width: 320px;
     margin: 0 auto 6px auto;
     letter-spacing: -0.02em;
-    color: #0f172a;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.65);
+    color: #090e17;
+    text-shadow: 0 1px 2px #ffffff, 0 0 10px rgba(255, 255, 255, 0.95), 0 0 20px rgba(255, 255, 255, 0.7);
   }
 
   .heading-accent-line {
@@ -3109,16 +3111,22 @@ a {
     background-color: #f59e0b;
     border-radius: 3px;
     margin: 6px auto 12px auto;
+    box-shadow: 0 1px 3px rgba(245, 158, 11, 0.4);
   }
 
   .hero-rentq-subtext {
     max-width: 330px;
-    font-size: 0.83rem;
-    font-weight: 500;
-    color: #1e293b;
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: #0f172a;
     line-height: 1.45;
     margin: 0 auto 13px auto;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7);
+    text-shadow: 0 1px 2px #ffffff, 0 0 8px rgba(255, 255, 255, 0.95);
+  }
+
+  .hero-rentq-subtext strong {
+    color: #000000;
+    font-weight: 800;
   }
 
   .hero-plan-tabs-wrap {
