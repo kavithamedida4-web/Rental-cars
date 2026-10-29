@@ -1190,11 +1190,6 @@ export default function Home() {
           <div className="container">
             {/* Header matching Image 2 */}
             <div className="fleet-showcase-header">
-              <div className="fleet-eyebrow-badge">
-                <Sparkles size={13} className="fleet-eyebrow-icon" />
-                <span>Hyderabad&apos;s Premier Self-Drive Fleet</span>
-              </div>
-
               <h2 className="fleet-showcase-title">
                 Daily, Weekly &amp;<br className="heading-br-desktop" />
                 Monthly Car Rentals In<br className="heading-br-desktop" />
