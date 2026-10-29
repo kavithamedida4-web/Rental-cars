@@ -433,8 +433,8 @@ export default function Home() {
               <Car size={22} strokeWidth={2.4} />
             </div>
             <div className="brand-text-block">
-              <span className="brand-title">RENC</span>
-              <span className="brand-tagline">CAR RENTALS HYDERABAD</span>
+              <span className="brand-title">Royal Cars</span>
+              <span className="brand-tagline">LUXURY CARS</span>
             </div>
           </a>
 
@@ -543,7 +543,7 @@ export default function Home() {
                 <ArrowUpRight size={16} />
               </a>
               <a
-                href="https://wa.me/919642642604?text=Hello%20RENC%2C%20I%20want%20to%20rent%20a%20car"
+                href="https://wa.me/919642642604?text=Hello%20Royal%20Cars%2C%20I%20want%20to%20rent%20a%20car"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hero-cta-btn-secondary"
@@ -1599,7 +1599,7 @@ export default function Home() {
 
                 {/* Floating Google Business Card matching reference design */}
                 <div className="map-google-business-card">
-                  <div className="map-card-company">RENC CAR RENTALS</div>
+                  <div className="map-card-company">ROYAL CARS &amp; LUXURY CARS</div>
                   <div className="map-card-category">Luxury &amp; Self-Drive Car Rental Service</div>
                   <div className="map-card-address">
                     2nd Floor, Asif Nagar Rd, Opp. Pista House, Hyderabad, Telangana 500006, India
@@ -1664,9 +1664,9 @@ export default function Home() {
                   <Car size={22} strokeWidth={2.4} />
                 </div>
                 <div className="brand-text-block">
-                  <span className="brand-title" style={{ color: "#ffffff" }}>RENC</span>
+                  <span className="brand-title" style={{ color: "#ffffff" }}>Royal Cars</span>
                   <span className="brand-tagline" style={{ color: "var(--rentq-orange)" }}>
-                    CAR RENTALS HYDERABAD
+                    LUXURY CARS
                   </span>
                 </div>
               </a>
@@ -1845,7 +1845,7 @@ export default function Home() {
           {/* Bottom Copyright & Edone Solutions Credit Line */}
           <div className="footer-bottom-flex">
             <div>
-              &copy; 2026 RENC Car Rentals Hyderabad. All rights reserved.
+              &copy; 2026 Royal Cars &amp; Luxury Cars Hyderabad. All rights reserved.
             </div>
             <div className="footer-developer-credit">
               Designed &amp; Developed by{" "}
@@ -1859,7 +1859,7 @@ export default function Home() {
 
       {/* Floating Chat With Us Button */}
       <a
-        href="https://wa.me/919642642604?text=Hello%20RENC%2C%20I%20want%20to%20rent%20a%20car"
+        href="https://wa.me/919642642604?text=Hello%20Royal%20Cars%2C%20I%20want%20to%20rent%20a%20car"
         target="_blank"
         rel="noopener noreferrer"
         className="floating-chat-with-us"

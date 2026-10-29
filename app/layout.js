@@ -10,11 +10,11 @@ const siteUrl =
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "RENC Car Rentals Hyderabad — Self-Drive & Luxury Car Hire",
-    template: "%s | RENC Car Rentals Hyderabad",
+    default: "Royal Cars & Luxury Cars Hyderabad — Self-Drive & Luxury Car Hire",
+    template: "%s | Royal Cars & Luxury Cars Hyderabad",
   },
   description:
-    "Rent self-drive & luxury cars in Hyderabad with RENC. Zero deposit, doorstep delivery in 60 mins, verified cars & 24/7 airport pickup at RGIA Shamshabad.",
+    "Rent self-drive & luxury cars in Hyderabad with Royal Cars. Zero deposit, doorstep delivery in 60 mins, verified cars & 24/7 airport pickup at RGIA Shamshabad.",
   keywords: [
     "car rental Hyderabad",
     "self drive car rental Hyderabad",
@@ -34,9 +34,9 @@ export const metadata = {
     "Gachibowli car rental",
     "Jubilee Hills car rental",
   ],
-  authors: [{ name: "RENC Car Rentals Hyderabad" }],
-  creator: "RENC Car Rentals",
-  publisher: "RENC Car Rentals",
+  authors: [{ name: "Royal Cars & Luxury Cars Hyderabad" }],
+  creator: "Royal Cars & Luxury Cars",
+  publisher: "Royal Cars & Luxury Cars",
   formatDetection: {
     email: false,
     address: true,
@@ -46,11 +46,11 @@ export const metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "RENC Car Rentals Hyderabad — Self-Drive & Luxury Car Hire",
+    title: "Royal Cars & Luxury Cars Hyderabad — Self-Drive & Luxury Car Hire",
     description:
-      "Rent self-drive & luxury cars in Hyderabad with RENC. Zero deposit, doorstep delivery in 60 mins, verified cars & 24/7 airport pickup at RGIA Shamshabad.",
+      "Rent self-drive & luxury cars in Hyderabad with Royal Cars. Zero deposit, doorstep delivery in 60 mins, verified cars & 24/7 airport pickup at RGIA Shamshabad.",
     url: siteUrl,
-    siteName: "RENC Car Rentals",
+    siteName: "Royal Cars & Luxury Cars",
     locale: "en_IN",
     type: "website",
     images: [
@@ -58,17 +58,17 @@ export const metadata = {
         url: "/images/hero-fleet-4k.png",
         width: 1200,
         height: 630,
-        alt: "RENC Car Rentals Hyderabad - Premium Self-Drive & Luxury Fleet",
+        alt: "Royal Cars & Luxury Cars Hyderabad - Premium Self-Drive & Luxury Fleet",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@renccarrentals",
-    creator: "@renccarrentals",
-    title: "RENC Car Rentals Hyderabad — Self-Drive & Luxury Car Hire",
+    site: "@royalcarsrentalshyd",
+    creator: "@royalcarsrentalshyd",
+    title: "Royal Cars & Luxury Cars Hyderabad — Self-Drive & Luxury Car Hire",
     description:
-      "Rent self-drive & luxury cars in Hyderabad with RENC. Zero deposit, doorstep delivery in 60 mins, verified cars & 24/7 airport pickup at RGIA Shamshabad.",
+      "Rent self-drive & luxury cars in Hyderabad with Royal Cars. Zero deposit, doorstep delivery in 60 mins, verified cars & 24/7 airport pickup at RGIA Shamshabad.",
     images: ["/images/hero-fleet-4k.png"],
   },
   robots: {
@@ -105,8 +105,8 @@ const jsonLdSchemas = [
     "@context": "https://schema.org",
     "@type": "AutoRental",
     "@id": `${siteUrl}/#autorental`,
-    name: "RENC Car Rentals",
-    alternateName: "RENC Luxury & Self-Drive Car Rentals Hyderabad",
+    name: "Royal Cars & Luxury Cars",
+    alternateName: "Royal Cars & Luxury Car Rentals Hyderabad",
     url: siteUrl,
     logo: `${siteUrl}/images/hero-fleet-4k.png`,
     image: [
@@ -206,7 +206,7 @@ const jsonLdSchemas = [
     "@type": "WebSite",
     "@id": `${siteUrl}/#website`,
     url: siteUrl,
-    name: "RENC Car Rentals Hyderabad",
+    name: "Royal Cars & Luxury Cars Hyderabad",
     description: "Self-Drive, Luxury & Airport Car Hire Services in Hyderabad",
     inLanguage: "en-IN",
   },
