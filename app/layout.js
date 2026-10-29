@@ -124,17 +124,18 @@ const jsonLdSchemas = [
     paymentAccepted: "Cash, Credit Card, Debit Card, UPI, Net Banking",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Road No. 36, Near Peddamma Temple Metro Station, Jubilee Hills",
+      streetAddress: "2nd Floor, Asif Nagar Rd, Opp. Pista House, Feroz Gandhi Nagar",
       addressLocality: "Hyderabad",
       addressRegion: "Telangana",
-      postalCode: "500033",
+      postalCode: "500006",
       addressCountry: "IN",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 17.4325,
-      longitude: 78.4071,
+      latitude: 17.3888,
+      longitude: 78.4416,
     },
+    hasMap: "https://maps.app.goo.gl/QSiM8KGGAvzYerpS8?g_st=aw",
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",

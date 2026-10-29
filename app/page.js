@@ -346,10 +346,10 @@ export default function Home() {
       phone: "+91 9100-247-367",
     },
     {
-      title: "Jubilee & Banjara Hills",
-      badge: "Luxury Showroom Hub",
-      address: "Road No. 36, Near Peddamma Temple Metro, Jubilee Hills",
-      timing: "8:00 AM - 10:30 PM",
+      title: "Asif Nagar & Mehdipatnam",
+      badge: "Main Office & Fleet Hub",
+      address: "2nd Floor, Asif Nagar Rd, Opp. Pista House, Hyderabad 500006",
+      timing: "8:00 AM - 11:00 PM",
       phone: "+91 9100-247-368",
     },
   ];
@@ -1585,8 +1585,8 @@ export default function Home() {
               <div className="fast-booking-map-card">
                 {/* Embedded Real Hyderabad Google Map */}
                 <iframe
-                  title="RENC Car Rentals Hyderabad Location Map"
-                  src="https://maps.google.com/maps?q=Road%20No.%2036,%20Jubilee%20Hills,%20Hyderabad,%20Telangana&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  title="RENC Car Rentals Location Map"
+                  src="https://maps.google.com/maps?q=Royal%20Cars%20and%20Luxury%20Cars,%20Asif%20Nagar%20Rd,%20opp.%20Pista%20House,%20Hyderabad,%20Telangana%20500006&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   className="map-google-iframe"
                   loading="lazy"
                   allowFullScreen
@@ -1597,7 +1597,7 @@ export default function Home() {
                   <div className="map-card-company">RENC CAR RENTALS</div>
                   <div className="map-card-category">Luxury &amp; Self-Drive Car Rental Service</div>
                   <div className="map-card-address">
-                    Road No. 36, Jubilee Hills &amp; RGIA Airport, Hyderabad, Telangana 500033, India
+                    2nd Floor, Asif Nagar Rd, Opp. Pista House, Hyderabad, Telangana 500006, India
                   </div>
 
                   <div className="map-card-ratings">
@@ -1608,7 +1608,7 @@ export default function Home() {
                       ))}
                     </div>
                     <a
-                      href="https://www.google.com/maps/search/RENC+Car+Rentals+Hyderabad+Jubilee+Hills"
+                      href="https://maps.app.goo.gl/QSiM8KGGAvzYerpS8?g_st=aw"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="map-reviews-count"
@@ -1621,7 +1621,7 @@ export default function Home() {
                   </div>
 
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=Road+No.+36,+Jubilee+Hills,+Hyderabad"
+                    href="https://maps.app.goo.gl/QSiM8KGGAvzYerpS8?g_st=aw"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="map-open-btn"
@@ -1808,13 +1808,13 @@ export default function Home() {
                   <MapPin size={18} className="footer-contact-icon" />
                   <div className="footer-contact-text" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
                     <div>
-                      <span itemProp="streetAddress">Road No. 36, Jubilee Hills</span>, <span itemProp="addressLocality">Hyderabad</span> <span itemProp="postalCode">500033</span>
+                      <span itemProp="streetAddress">2nd Floor, Asif Nagar Rd, Opp. Pista House</span>, <span itemProp="addressLocality">Hyderabad</span> <span itemProp="postalCode">500006</span>
                       <meta itemProp="addressRegion" content="Telangana" />
                       <meta itemProp="addressCountry" content="IN" />
                     </div>
-                    <div style={{ color: "#64748b", fontSize: "0.78rem" }}>Near Peddamma Temple Metro Station</div>
+                    <div style={{ color: "#64748b", fontSize: "0.78rem" }}>Feroz Gandhi Nagar, Asif Nagar North</div>
                     <a
-                      href="https://www.google.com/maps/search/?api=1&query=Road+No.+36,+Jubilee+Hills,+Hyderabad"
+                      href="https://maps.app.goo.gl/QSiM8KGGAvzYerpS8?g_st=aw"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="footer-maps-action-link"
