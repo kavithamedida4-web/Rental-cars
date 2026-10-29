@@ -3086,8 +3086,7 @@ a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: radial-gradient(ellipse 96% 75% at 50% 30%, rgba(255, 255, 255, 0.65) 0%, rgba(255, 255, 255, 0.2) 65%, transparent 100%);
-    border-radius: 24px;
+    background: none;
   }
 
   .heading-mobile-break {
@@ -3101,8 +3100,8 @@ a {
     max-width: 320px;
     margin: 0 auto 6px auto;
     letter-spacing: -0.02em;
-    color: #090e17;
-    text-shadow: 0 1px 2px #ffffff, 0 0 10px rgba(255, 255, 255, 0.95), 0 0 20px rgba(255, 255, 255, 0.7);
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7), 0 1px 3px rgba(0, 0, 0, 0.9);
   }
 
   .heading-accent-line {
@@ -3111,22 +3110,23 @@ a {
     background-color: #f59e0b;
     border-radius: 3px;
     margin: 6px auto 12px auto;
-    box-shadow: 0 1px 3px rgba(245, 158, 11, 0.4);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
   }
 
   .hero-rentq-subtext {
     max-width: 330px;
     font-size: 0.86rem;
     font-weight: 600;
-    color: #0f172a;
+    color: #ffffff;
     line-height: 1.45;
     margin: 0 auto 13px auto;
-    text-shadow: 0 1px 2px #ffffff, 0 0 8px rgba(255, 255, 255, 0.95);
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.75), 0 1px 3px rgba(0, 0, 0, 0.9);
   }
 
   .hero-rentq-subtext strong {
-    color: #000000;
+    color: #ffffff;
     font-weight: 800;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.85);
   }
 
   .hero-plan-tabs-wrap {
