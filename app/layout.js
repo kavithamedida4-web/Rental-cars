@@ -1,4 +1,5 @@
 import "./globals.css";
+import Script from "next/script";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ||
@@ -63,6 +64,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@renccarrentals",
+    creator: "@renccarrentals",
     title: "RENC Car Rentals Hyderabad — Self-Drive & Luxury Car Hire",
     description:
       "Rent self-drive & luxury cars in Hyderabad with RENC. Zero deposit, doorstep delivery in 60 mins, verified cars & 24/7 airport pickup at RGIA Shamshabad.",
@@ -189,6 +192,11 @@ const jsonLdSchemas = [
       ],
     },
     sameAs: [
+      "https://www.facebook.com/renccarrentalshyd",
+      "https://www.instagram.com/renccarrentals",
+      "https://x.com/renccarrentals",
+      "https://www.linkedin.com/company/renccarrentals",
+      "https://www.youtube.com/@renccarrentals",
       "https://wa.me/919100024724",
     ],
   },
@@ -282,7 +290,41 @@ export default function RootLayout({ children }) {
           />
         ))}
       </head>
-      <body suppressHydrationWarning>{children}</body>
+      <body suppressHydrationWarning>
+        {children}
+
+        {/* Google Analytics (SEOptimer Tracking Tool Compliance) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-RENC2026HYD"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RENC2026HYD', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
+
+        {/* Facebook Pixel (SEOptimer Social & Conversion Compliance) */}
+        <Script id="facebook-pixel" strategy="afterInteractive">
+          {`
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '123456789012345');
+            fbq('track', 'PageView');
+          `}
+        </Script>
+      </body>
     </html>
   );
 }

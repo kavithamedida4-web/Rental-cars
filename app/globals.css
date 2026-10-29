@@ -3187,3 +3187,32 @@ a {
     max-width: 100% !important;
   }
 }
+
+/* Footer Social Icons (SEOptimer Social Media Compliance) */
+.footer-social-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.footer-social-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #94a3b8;
+  text-decoration: none;
+  transition: all 0.22s ease;
+}
+
+.footer-social-pill:hover {
+  background: var(--rentq-orange);
+  color: #ffffff;
+  border-color: var(--rentq-orange);
+  transform: translateY(-2px);
+}
