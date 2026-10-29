@@ -528,17 +528,12 @@ export default function Home() {
           <div className="container hero-rentq-overlay-content">
             {/* MANDATORY USER REQUIREMENT: Main big heading only 600px width */}
             <h1 className="rentq-main-heading" id="hero-main-heading">
-              Daily, Weekly &amp; Monthly Car Rentals In Hyderabad
+              Daily, Weekly &amp;<br className="heading-mobile-break" /> Monthly Car Rentals<br className="heading-mobile-break" /> in Hyderabad
             </h1>
             <div className="heading-accent-line"></div>
 
             <p className="hero-rentq-subtext">
-              <span className="hero-subtext-desktop">
-                Explore Hyderabad&apos;s most popular, top-demanding self drive cars with <strong>Manual &amp; Automatic</strong> transmissions. Choose between <strong>Daily Deals</strong>, <strong>Weekly Rentals</strong>, or <strong>Monthly Subscriptions</strong> with doorstep delivery.
-              </span>
-              <span className="hero-subtext-mobile">
-                Self-drive &amp; luxury cars with instant doorstep delivery across Hyderabad.
-              </span>
+              Explore Hyderabad&apos;s most popular, top-demanding self drive cars with <strong>Manual &amp; Automatic</strong> transmissions. Choose between <strong>Daily Deals</strong>, <strong>Weekly Rentals</strong>, or <strong>Monthly Subscriptions</strong> with doorstep delivery.
             </p>
 
             {/* Interactive Duration Plan Selector (Image 2) */}
