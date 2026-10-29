@@ -536,36 +536,6 @@ export default function Home() {
               Explore Hyderabad&apos;s most popular, top-demanding self drive cars with <strong>Manual &amp; Automatic</strong> transmissions. Choose between <strong>Daily Deals</strong>, <strong>Weekly Rentals</strong>, or <strong>Monthly Subscriptions</strong> with doorstep delivery.
             </p>
 
-            {/* Interactive Duration Plan Selector (Image 2) */}
-            <div className="hero-plan-tabs-wrap">
-              <button
-                type="button"
-                className={`hero-plan-tab-btn ${durationPlan === "daily" ? "active" : ""}`}
-                onClick={() => setDurationPlan("daily")}
-              >
-                <Calendar size={15} />
-                <span>Daily</span>
-              </button>
-              <button
-                type="button"
-                className={`hero-plan-tab-btn ${durationPlan === "weekly" ? "active" : ""}`}
-                onClick={() => setDurationPlan("weekly")}
-              >
-                <Clock size={15} />
-                <span>Weekly</span>
-                <span className="hero-plan-tab-badge">7-Day</span>
-              </button>
-              <button
-                type="button"
-                className={`hero-plan-tab-btn ${durationPlan === "monthly" ? "active" : ""}`}
-                onClick={() => setDurationPlan("monthly")}
-              >
-                <Zap size={15} />
-                <span>Monthly</span>
-                <span className="hero-plan-tab-badge badge-deal">Deal</span>
-              </button>
-            </div>
-
             {/* Call To Action 2 Buttons in Hero Section */}
             <div className="hero-cta-btn-group">
               <a href="#gallery" className="hero-cta-btn-primary">
