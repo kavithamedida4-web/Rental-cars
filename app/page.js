@@ -438,13 +438,12 @@ export default function Home() {
             </div>
           </a>
 
-          {/* Center Navigation Links (Home, Services, About, Gallery, Contact) */}
+          {/* Center Navigation Links (Home, Services, About, Gallery) */}
           <ul className="nav-center-menu">
             <li><a href="#hero" className="active">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
           </ul>
 
           {/* Right Action (Book Now CTA) */}
@@ -476,7 +475,6 @@ export default function Home() {
             <a href="#services" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Services</a>
             <a href="#about" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>About</a>
             <a href="#gallery" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Gallery</a>
-            <a href="#contact" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Contact</a>
             <a
               href="tel:+919642642604"
               onClick={() => setMobileMenuOpen(false)}
