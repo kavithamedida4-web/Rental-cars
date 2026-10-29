@@ -3073,7 +3073,7 @@ a {
   .hero-rentq-overlay-content {
     position: relative;
     z-index: 4;
-    padding-top: clamp(14px, 2.8vh, 22px);
+    padding-top: clamp(32px, 7vh, 52px);
     padding-left: 14px;
     padding-right: 14px;
     padding-bottom: 0;
@@ -3085,9 +3085,9 @@ a {
   }
 
   .rentq-main-heading {
-    font-size: clamp(1.36rem, 5.2vw, 1.58rem);
+    font-size: clamp(1.26rem, 4.8vw, 1.46rem);
     line-height: 1.2;
-    max-width: 310px;
+    max-width: 290px;
     margin: 0 auto 4px auto;
     letter-spacing: -0.02em;
     color: #0f172a;
@@ -3095,7 +3095,7 @@ a {
   }
 
   .heading-accent-line {
-    width: 36px;
+    width: 32px;
     height: 3px;
     background-color: #f59e0b;
     border-radius: 2px;
@@ -3108,7 +3108,7 @@ a {
 
   .hero-subtext-mobile {
     display: inline !important;
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: #1e293b;
     line-height: 1.35;
@@ -3116,7 +3116,7 @@ a {
   }
 
   .hero-rentq-subtext {
-    max-width: 290px;
+    max-width: 275px;
     margin: 0 auto 10px auto;
   }
 

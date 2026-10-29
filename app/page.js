@@ -509,8 +509,9 @@ export default function Home() {
             - Symmetrical front-facing 3-car showcase (Red in center, white on sides)
             ======================================================== */}
         <section className="hero-rentq-section" id="hero">
-          {/* Full Screen Background Image (Cars at bottom, ample space for text on top) */}
-          <div className="hero-rentq-bg-wrap">
+          {/* Responsive Hero Background Image */}
+          <picture className="hero-rentq-bg-wrap">
+            <source media="(max-width: 768px)" srcSet="/images/hero-fleet-mobile.png" />
             <img
               src="/images/hero-fleet-4k.png"
               alt="RENC lineup of modern rental cars in Hyderabad: hatchbacks, sedans, compact SUVs and luxury cars"
@@ -521,7 +522,7 @@ export default function Home() {
               width={1920}
               height={1080}
             />
-          </div>
+          </picture>
 
           {/* Overlay Content Sitting Directly on the Background Image */}
           <div className="container hero-rentq-overlay-content">
