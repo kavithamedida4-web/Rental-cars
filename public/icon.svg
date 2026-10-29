@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="renqGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff5722" />
+      <stop offset="100%" stop-color="#e63900" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#renqGrad)" />
+  <g fill="none" stroke="#ffffff" stroke-width="26" stroke-linecap="round" stroke-linejoin="round" transform="translate(64, 80) scale(0.75)">
+    <!-- Sleek Car Silhouette -->
+    <path d="M40 280 L90 280 L130 180 L350 180 L400 280 L460 280 C480 280 495 295 495 315 L495 370 C495 385 485 395 470 395 L450 395" />
+    <path d="M40 280 C20 280 15 295 15 315 L15 370 C15 385 25 395 40 395 L65 395" />
+    <!-- Wheels -->
+    <circle cx="120" cy="395" r="55" fill="#e63900" stroke="#ffffff" stroke-width="26" />
+    <circle cx="120" cy="395" r="20" fill="#ffffff" />
+    <circle cx="395" cy="395" r="55" fill="#e63900" stroke="#ffffff" stroke-width="26" />
+    <circle cx="395" cy="395" r="20" fill="#ffffff" />
+    <!-- Underbody line -->
+    <path d="M175 395 L340 395" stroke-width="26" />
+    <!-- Windshield & Windows -->
+    <path d="M145 195 L245 195 L245 270 L115 270 Z" fill="#ffffff" fill-opacity="0.25" stroke="#ffffff" stroke-width="18" />
+    <path d="M265 195 L340 195 L375 270 L265 270 Z" fill="#ffffff" fill-opacity="0.25" stroke="#ffffff" stroke-width="18" />
+    <!-- Headlight & Taillight glow -->
+    <line x1="450" y1="310" x2="480" y2="310" stroke="#ffeb3b" stroke-width="20" />
+    <line x1="30" y1="310" x2="60" y2="310" stroke="#ffcdd2" stroke-width="16" />
+  </g>
+</svg>
+
