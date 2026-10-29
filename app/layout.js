@@ -1,15 +1,19 @@
 import "./globals.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://renccarrentals.com";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "https://rental-cars-ten-fawn.vercel.app");
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "RENC Car Rentals Hyderabad — Self-Drive, Luxury & Airport Car Hire",
+    default: "RENC Car Rentals Hyderabad — Self-Drive & Luxury Car Hire",
     template: "%s | RENC Car Rentals Hyderabad",
   },
   description:
-    "Rent self-drive & luxury cars in Hyderabad with RENC. Zero deposit options, verified manual & automatic cars, doorstep delivery in 60 mins & 24/7 airport pickup at RGIA Shamshabad.",
+    "Rent self-drive & luxury cars in Hyderabad with RENC. Zero deposit, doorstep delivery in 60 mins, verified cars & 24/7 airport pickup at RGIA Shamshabad.",
   keywords: [
     "car rental Hyderabad",
     "self drive car rental Hyderabad",
@@ -41,9 +45,9 @@ export const metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "RENC Car Rentals Hyderabad — Self-Drive, Luxury & Airport Car Hire",
+    title: "RENC Car Rentals Hyderabad — Self-Drive & Luxury Car Hire",
     description:
-      "Premium self-drive & chauffeur-driven car rentals across Hyderabad. Doorstep delivery, verified sanitized cars, and 24/7 RGIA airport pickup.",
+      "Rent self-drive & luxury cars in Hyderabad with RENC. Zero deposit, doorstep delivery in 60 mins, verified cars & 24/7 airport pickup at RGIA Shamshabad.",
     url: siteUrl,
     siteName: "RENC Car Rentals",
     locale: "en_IN",
@@ -59,9 +63,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "RENC Car Rentals Hyderabad — Self-Drive, Luxury & Airport Car Hire",
+    title: "RENC Car Rentals Hyderabad — Self-Drive & Luxury Car Hire",
     description:
-      "Premium self-drive & luxury cars in Hyderabad with fast doorstep delivery and 24/7 RGIA airport handover.",
+      "Rent self-drive & luxury cars in Hyderabad with RENC. Zero deposit, doorstep delivery in 60 mins, verified cars & 24/7 airport pickup at RGIA Shamshabad.",
     images: ["/images/hero-fleet-4k.png"],
   },
   robots: {

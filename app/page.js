@@ -753,9 +753,9 @@ export default function Home() {
                       <Smartphone size={22} />
                     </div>
                     <div>
-                      <h4 className="about-feature-title">
+                      <h3 className="about-feature-title">
                         Easy Booking Process
-                      </h4>
+                      </h3>
                       <p className="about-feature-text">
                         We Have Optimized The Booking Process So That Our Clients Can Experience The Easiest And The Safest Service.
                       </p>
@@ -771,9 +771,9 @@ export default function Home() {
                       <KeyRound size={22} />
                     </div>
                     <div>
-                      <h4 className="about-feature-title">
+                      <h3 className="about-feature-title">
                         Convenient Pick-Up &amp; Return Process
-                      </h4>
+                      </h3>
                       <p className="about-feature-text">
                         We Have Optimized The Booking Process So That Our Clients Can Experience The Easiest And The Safest Service.
                       </p>
@@ -1683,7 +1683,7 @@ export default function Home() {
 
             {/* Column 2: Quick Links (Website Main Navigation) */}
             <div>
-              <h4 className="footer-col-title">Quick Links</h4>
+              <h3 className="footer-col-title">Quick Links</h3>
               <ul className="footer-nav-list">
                 <li className="footer-link-item">
                   <a href="#hero" className="footer-nav-link">
@@ -1720,7 +1720,7 @@ export default function Home() {
 
             {/* Column 3: Services (Real Website Services) */}
             <div>
-              <h4 className="footer-col-title">Services</h4>
+              <h3 className="footer-col-title">Services</h3>
               <ul className="footer-nav-list">
                 <li className="footer-link-item">
                   <a href="#services" className="footer-nav-link">
@@ -1751,21 +1751,25 @@ export default function Home() {
             </div>
 
             {/* Column 4: Contact Us (Real Website Details) */}
-            <div>
-              <h4 className="footer-col-title">Contact Us</h4>
+            <div itemScope itemType="https://schema.org/AutoRental">
+              <h3 className="footer-col-title">Contact Us</h3>
               <div className="footer-contact-stack">
                 <div className="footer-contact-row">
                   <Phone size={18} className="footer-contact-icon" />
                   <div className="footer-contact-text">
-                    <div><a href="tel:+919100024724">+91 91000 24724</a></div>
+                    <div><a href="tel:+919100024724" itemProp="telephone">+91 91000 24724</a></div>
                     <div><a href="tel:+919100247365">+91 9100-247-365</a></div>
                   </div>
                 </div>
 
                 <div className="footer-contact-row">
                   <MapPin size={18} className="footer-contact-icon" />
-                  <div className="footer-contact-text">
-                    <div>Road No. 36, Jubilee Hills, Hyderabad 500033</div>
+                  <div className="footer-contact-text" itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+                    <div>
+                      <span itemProp="streetAddress">Road No. 36, Jubilee Hills</span>, <span itemProp="addressLocality">Hyderabad</span> <span itemProp="postalCode">500033</span>
+                      <meta itemProp="addressRegion" content="Telangana" />
+                      <meta itemProp="addressCountry" content="IN" />
+                    </div>
                     <div style={{ color: "#64748b", fontSize: "0.78rem" }}>Near Peddamma Temple Metro Station</div>
                     <a
                       href="https://www.google.com/maps/search/?api=1&query=Road+No.+36,+Jubilee+Hills,+Hyderabad"
