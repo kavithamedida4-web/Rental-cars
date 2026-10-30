@@ -1806,7 +1806,6 @@ export default function Home() {
                   <Phone size={18} className="footer-contact-icon" />
                   <div className="footer-contact-text">
                     <div><a href="tel:+917396662420" itemProp="telephone">+91 73966 62420</a></div>
-                    <div><a href="https://wa.me/917396662420" target="_blank" rel="noopener noreferrer">+91 73966 62420 (WhatsApp)</a></div>
                   </div>
                 </div>
 
