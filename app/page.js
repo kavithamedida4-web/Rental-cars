@@ -483,15 +483,15 @@ export default function Home() {
                 alignItems: "center",
                 justifyContent: "center",
                 gap: "8px",
-                background: "#ffffff",
-                color: "#ff4800",
+                background: "#000000",
+                color: "#ffffff",
                 padding: "10px 22px",
                 borderRadius: "50px",
                 fontWeight: 800,
                 fontSize: "0.92rem",
                 marginTop: "6px",
                 width: "fit-content",
-                boxShadow: "0 4px 12px rgba(0,0,0,0.12)"
+                boxShadow: "0 4px 12px rgba(0,0,0,0.25)"
               }}
             >
               <span>Book Now</span>
