@@ -118,7 +118,7 @@ const jsonLdSchemas = [
     ],
     description:
       "Premier self-drive, luxury, and chauffeur-driven car rental services across Hyderabad. Offering hatchbacks, sedans, 5-seater and 7-seater SUVs with doorstep delivery in 60 minutes and 24/7 airport dispatch at Shamshabad RGIA.",
-    telephone: "+91-9642642604",
+    telephone: "+91-7396662420",
     priceRange: "₹1800 - ₹32000 per day",
     currenciesAccepted: "INR",
     paymentAccepted: "Cash, Credit Card, Debit Card, UPI, Net Banking",
@@ -198,7 +198,7 @@ const jsonLdSchemas = [
       "https://x.com/renccarrentals",
       "https://www.linkedin.com/company/renccarrentals",
       "https://www.youtube.com/@renccarrentals",
-      "https://wa.me/919642642604",
+      "https://wa.me/917396662420",
     ],
   },
   {

@@ -382,14 +382,14 @@ export default function Home() {
     setIsBookedSuccess(true);
 
     if (selectedCarModal) {
-      const modalMessage = `*NEW CAR RESERVATION - RENC HYDERABAD*
+      const modalMessage = `*NEW CAR RESERVATION - ROYAL CARS & LUXURY CARS HYDERABAD*
 • Car: ${selectedCarModal.name}
 • Transmission: ${selectedCarModal.transmission}
 • Plan: ${durationPlan === "monthly" ? "Monthly Subscription" : durationPlan === "weekly" ? "Weekly 7-Day" : "Daily Rental"}
 • Rate: ${durationPlan === "monthly" ? selectedCarModal.priceMonthly : durationPlan === "weekly" ? selectedCarModal.priceWeekly : selectedCarModal.priceDaily}/day
 • Pickup Location: ${pickupLocation}`;
 
-      const modalWaUrl = `https://wa.me/919642642604?text=${encodeURIComponent(modalMessage)}`;
+      const modalWaUrl = `https://wa.me/917396662420?text=${encodeURIComponent(modalMessage)}`;
       setTimeout(() => {
         if (typeof window !== "undefined") {
           window.location.href = modalWaUrl;
@@ -407,14 +407,14 @@ export default function Home() {
     e.preventDefault();
     setContactSubmitted(true);
 
-    const message = `*NEW FAST BOOKING RESERVATION - RENC HYDERABAD*
+    const message = `*NEW CONTACT & BOOKING INQUIRY - ROYAL CARS & LUXURY CARS HYDERABAD*
 • Name: ${fastBookingForm.name || "Customer"}
 • Phone: ${fastBookingForm.phone}
 • Vehicle / Service: ${fastBookingForm.service}
 • Pickup Location: ${fastBookingForm.location}
 • Requirement & Notes: ${fastBookingForm.notes || "Standard rental inquiry"}`;
 
-    const waUrl = `https://wa.me/919642642604?text=${encodeURIComponent(message)}`;
+    const waUrl = `https://wa.me/917396662420?text=${encodeURIComponent(message)}`;
     if (typeof window !== "undefined") {
       window.location.href = waUrl;
     }
@@ -476,7 +476,7 @@ export default function Home() {
             <a href="#about" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>About</a>
             <a href="#gallery" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Gallery</a>
             <a
-              href="tel:+919642642604"
+              href="tel:+917396662420"
               onClick={() => setMobileMenuOpen(false)}
               style={{
                 display: "inline-flex",
@@ -494,7 +494,7 @@ export default function Home() {
               }}
             >
               <Phone size={15} />
-              <span>Call Dispatch: +91 96426 42604</span>
+              <span>Call Dispatch: +91 73966 62420</span>
             </a>
           </div>
         )}
@@ -543,7 +543,7 @@ export default function Home() {
                 <ArrowUpRight size={16} />
               </a>
               <a
-                href="https://wa.me/919642642604?text=Hello%20Royal%20Cars%2C%20I%20want%20to%20rent%20a%20car"
+                href="https://wa.me/917396662420?text=Hello%20Royal%20Cars%2C%20I%20want%20to%20rent%20a%20car"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hero-cta-btn-secondary"
@@ -1433,8 +1433,8 @@ export default function Home() {
                     </p>
                     <div className="booking-success-actions">
                       <a
-                        href={`https://wa.me/919642642604?text=${encodeURIComponent(
-                          `*RENC HYDERABAD INQUIRY*\nName: ${fastBookingForm.name}\nPhone: ${fastBookingForm.phone}\nService: ${fastBookingForm.service}\nLocation: ${fastBookingForm.location}\nNotes: ${fastBookingForm.notes}`
+                        href={`https://wa.me/917396662420?text=${encodeURIComponent(
+                          `*ROYAL CARS & LUXURY CARS INQUIRY*\nName: ${fastBookingForm.name}\nPhone: ${fastBookingForm.phone}\nService: ${fastBookingForm.service}\nLocation: ${fastBookingForm.location}\nNotes: ${fastBookingForm.notes}`
                         )}`}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -1804,8 +1804,8 @@ export default function Home() {
                 <div className="footer-contact-row">
                   <Phone size={18} className="footer-contact-icon" />
                   <div className="footer-contact-text">
-                    <div><a href="tel:+919642642604" itemProp="telephone">+91 96426 42604</a></div>
-                    <div><a href="tel:+919642642604">+91 96426 42604</a></div>
+                    <div><a href="tel:+917396662420" itemProp="telephone">+91 73966 62420</a></div>
+                    <div><a href="https://wa.me/917396662420" target="_blank" rel="noopener noreferrer">+91 73966 62420 (WhatsApp)</a></div>
                   </div>
                 </div>
 
@@ -1859,7 +1859,7 @@ export default function Home() {
 
       {/* Floating Chat With Us Button */}
       <a
-        href="https://wa.me/919642642604?text=Hello%20Royal%20Cars%2C%20I%20want%20to%20rent%20a%20car"
+        href="https://wa.me/917396662420?text=Hello%20Royal%20Cars%2C%20I%20want%20to%20rent%20a%20car"
         target="_blank"
         rel="noopener noreferrer"
         className="floating-chat-with-us"
