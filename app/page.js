@@ -1776,15 +1776,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="footer-contact-row">
-                  <Clock size={18} className="footer-contact-icon" />
-                  <div className="footer-contact-text">
-                    <div>7:00 AM – 11:30 PM (Daily)</div>
-                    <div style={{ color: "#94a3b8", fontSize: "0.8rem", marginTop: "2px" }}>
-                      24/7 Delivery &amp; Drop-off at Airport
-                    </div>
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>
