@@ -533,7 +533,7 @@ export default function Home() {
             <div className="heading-accent-line"></div>
 
             <p className="hero-rentq-subtext">
-              Explore Hyderabad&apos;s most popular, top-demanding self drive cars with <strong>Manual &amp; Automatic</strong> transmissions. Choose between <strong>Daily Deals</strong>, <strong>Weekly Rentals</strong>, or <strong>Monthly Subscriptions</strong> with doorstep delivery.
+              Self-drive &amp; luxury cars with instant doorstep delivery across Hyderabad.
             </p>
 
             {/* Call To Action 2 Buttons in Hero Section */}
