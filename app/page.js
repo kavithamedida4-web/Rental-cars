@@ -438,11 +438,11 @@ export default function Home() {
             </div>
           </a>
 
-          {/* Center Navigation Links (Home, Services, About, Gallery) */}
+          {/* Center Navigation Links (Home, About, Services, Gallery) */}
           <ul className="nav-center-menu">
             <li><a href="#hero" className="active">Home</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#gallery">Gallery</a></li>
           </ul>
 
@@ -472,8 +472,8 @@ export default function Home() {
             gap: "14px"
           }}>
             <a href="#hero" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Home</a>
-            <a href="#services" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Services</a>
             <a href="#about" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>About</a>
+            <a href="#services" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Services</a>
             <a href="#gallery" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Gallery</a>
             <a
               href="tel:+917396662420"
@@ -560,7 +560,103 @@ export default function Home() {
         </section>
 
         {/* ========================================================
-            2. SERVICES SECTION (Second in sequence)
+            2. ABOUT US SECTION (Second in sequence)
+            ======================================================== */}
+        <section className="section-padding bg-white" id="about">
+          <div className="container">
+            <div className="about-split-layout">
+              {/* Left Column: Twin Overlapping Circular Photos of Indian Service Men in Orange T-Shirts */}
+              <div className="about-circles-cluster">
+                {/* Back / Top-Left Capsule Arch: Indian serviceman in orange polo t-shirt sitting in car with open door */}
+                <div className="about-circle-main">
+                  <img
+                    src="/images/about-service-arch.jpg"
+                    alt="Indian car rental service professional in orange polo t-shirt sitting in luxury car with open door"
+                    className="about-circle-img"
+                    loading="lazy"
+                    decoding="async"
+                    width={320}
+                    height={320}
+                  />
+                </div>
+
+                {/* Front / Bottom-Right Overlapping Circle: Indian serviceman in orange t-shirt handing car keys */}
+                <div className="about-circle-overlap">
+                  <img
+                    src="/images/about-service-2.jpg"
+                    alt="Indian car rental executive in orange polo t-shirt handing over car keys to customer"
+                    className="about-circle-img"
+                    loading="lazy"
+                    decoding="async"
+                    width={320}
+                    height={320}
+                  />
+                </div>
+              </div>
+
+              {/* Right Column: Content matching reference design */}
+              <div className="about-content-col">
+                <div className="about-tag-badge">
+                  <span className="about-tag-square"></span>
+                  <span>About Us</span>
+                </div>
+
+                <h2 className="about-main-heading">
+                  Your trusted partner in reliable car rental
+                </h2>
+
+                <p className="about-lead-desc">
+                  We are committed to delivering seamless self-drive freedom across Hyderabad. From pristine compact hatchbacks to executive luxury sedans and flagship SUVs, our fleet is fully serviced, sanitized, and ready for your next adventure.
+                </p>
+
+                <div className="about-features-card-list">
+                  {/* Feature 1: Easy Booking Process */}
+                  <div className="about-feature-item">
+                    <div className="about-feature-icon-circle">
+                      <Smartphone size={22} />
+                    </div>
+                    <div>
+                      <h3 className="about-feature-title">
+                        Easy Booking Process
+                      </h3>
+                      <p className="about-feature-text">
+                        We Have Optimized The Booking Process So That Our Clients Can Experience The Easiest And The Safest Service.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Feature Divider */}
+                  <div className="about-feature-divider" />
+
+                  {/* Feature 2: Convenient Pick-Up & Return Process */}
+                  <div className="about-feature-item">
+                    <div className="about-feature-icon-circle">
+                      <KeyRound size={22} />
+                    </div>
+                    <div>
+                      <h3 className="about-feature-title">
+                        Convenient Pick-Up &amp; Return Process
+                      </h3>
+                      <p className="about-feature-text">
+                        We Have Optimized The Booking Process So That Our Clients Can Experience The Easiest And The Safest Service.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Contact Us Button */}
+                <div className="about-btn-pair">
+                  <a href="#contact" className="about-btn-pill">
+                    Contact Us
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ========================================================
+            3. SERVICES SECTION (Third in sequence)
             ======================================================== */}
         <section className="section-padding bg-warm" id="services">
           <div className="container">
@@ -697,102 +793,6 @@ export default function Home() {
               >
                 <ChevronRight size={22} />
               </button>
-            </div>
-          </div>
-        </section>
-
-        {/* ========================================================
-            3. ABOUT US SECTION (Third in sequence)
-            ======================================================== */}
-        <section className="section-padding bg-white" id="about">
-          <div className="container">
-            <div className="about-split-layout">
-              {/* Left Column: Twin Overlapping Circular Photos of Indian Service Men in Orange T-Shirts */}
-              <div className="about-circles-cluster">
-                {/* Back / Top-Left Capsule Arch: Indian serviceman in orange polo t-shirt sitting in car with open door */}
-                <div className="about-circle-main">
-                  <img
-                    src="/images/about-service-arch.jpg"
-                    alt="Indian car rental service professional in orange polo t-shirt sitting in luxury car with open door"
-                    className="about-circle-img"
-                    loading="lazy"
-                    decoding="async"
-                    width={320}
-                    height={320}
-                  />
-                </div>
-
-                {/* Front / Bottom-Right Overlapping Circle: Indian serviceman in orange t-shirt handing car keys */}
-                <div className="about-circle-overlap">
-                  <img
-                    src="/images/about-service-2.jpg"
-                    alt="Indian car rental executive in orange polo t-shirt handing over car keys to customer"
-                    className="about-circle-img"
-                    loading="lazy"
-                    decoding="async"
-                    width={320}
-                    height={320}
-                  />
-                </div>
-              </div>
-
-              {/* Right Column: Content matching reference design */}
-              <div className="about-content-col">
-                <div className="about-tag-badge">
-                  <span className="about-tag-square"></span>
-                  <span>About Us</span>
-                </div>
-
-                <h2 className="about-main-heading">
-                  Your trusted partner in reliable car rental
-                </h2>
-
-                <p className="about-lead-desc">
-                  We are committed to delivering seamless self-drive freedom across Hyderabad. From pristine compact hatchbacks to executive luxury sedans and flagship SUVs, our fleet is fully serviced, sanitized, and ready for your next adventure.
-                </p>
-
-                <div className="about-features-card-list">
-                  {/* Feature 1: Easy Booking Process */}
-                  <div className="about-feature-item">
-                    <div className="about-feature-icon-circle">
-                      <Smartphone size={22} />
-                    </div>
-                    <div>
-                      <h3 className="about-feature-title">
-                        Easy Booking Process
-                      </h3>
-                      <p className="about-feature-text">
-                        We Have Optimized The Booking Process So That Our Clients Can Experience The Easiest And The Safest Service.
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Feature Divider */}
-                  <div className="about-feature-divider" />
-
-                  {/* Feature 2: Convenient Pick-Up & Return Process */}
-                  <div className="about-feature-item">
-                    <div className="about-feature-icon-circle">
-                      <KeyRound size={22} />
-                    </div>
-                    <div>
-                      <h3 className="about-feature-title">
-                        Convenient Pick-Up &amp; Return Process
-                      </h3>
-                      <p className="about-feature-text">
-                        We Have Optimized The Booking Process So That Our Clients Can Experience The Easiest And The Safest Service.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Contact Us Button */}
-                <div className="about-btn-pair">
-                  <a href="#contact" className="about-btn-pill">
-                    Contact Us
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </section>
