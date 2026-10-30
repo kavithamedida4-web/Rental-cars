@@ -476,25 +476,25 @@ export default function Home() {
             <a href="#services" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Services</a>
             <a href="#gallery" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Gallery</a>
             <a
-              href="tel:+917396662420"
+              href="#contact"
               onClick={() => setMobileMenuOpen(false)}
               style={{
                 display: "inline-flex",
                 alignItems: "center",
+                justifyContent: "center",
                 gap: "8px",
                 background: "#ffffff",
                 color: "#ff4800",
-                padding: "10px 18px",
+                padding: "10px 22px",
                 borderRadius: "50px",
                 fontWeight: 800,
-                fontSize: "0.88rem",
-                marginTop: "4px",
+                fontSize: "0.92rem",
+                marginTop: "6px",
                 width: "fit-content",
                 boxShadow: "0 4px 12px rgba(0,0,0,0.12)"
               }}
             >
-              <Phone size={15} />
-              <span>Call Dispatch: +91 73966 62420</span>
+              <span>Book Now</span>
             </a>
           </div>
         )}
