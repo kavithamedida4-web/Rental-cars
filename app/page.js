@@ -798,6 +798,144 @@ export default function Home() {
         </section>
 
         {/* ========================================================
+            4. FLEET CATALOG SECTION (Fourth in sequence, after Services)
+            - Professional & Designed Matching Image 2
+            ======================================================== */}
+        <section className="fleet-section-premium" id="gallery">
+          <div className="container">
+            {/* Header matching Image 2 */}
+            <div className="fleet-showcase-header">
+              <h2 className="fleet-showcase-title">
+                Daily, Weekly &amp; Monthly Car Rentals In Hyderabad
+              </h2>
+              <div className="fleet-showcase-accent-bar" />
+              <p className="fleet-showcase-subtext">
+                Explore top self-drive cars in Hyderabad with Manual &amp; Automatic transmissions on flexible Daily, Weekly, or Monthly plans.
+              </p>
+            </div>
+
+            {/* Duration Plan Selector Tabs from Image 2 */}
+            <div className="fleet-plan-selector-wrap">
+              <div className="fleet-plan-bar">
+                <button
+                  type="button"
+                  className={`fleet-plan-btn ${durationPlan === "daily" ? "active" : ""}`}
+                  onClick={() => setDurationPlan("daily")}
+                >
+                  <Calendar size={16} />
+                  <span>Daily</span>
+                </button>
+
+                <button
+                  type="button"
+                  className={`fleet-plan-btn ${durationPlan === "weekly" ? "active" : ""}`}
+                  onClick={() => setDurationPlan("weekly")}
+                >
+                  <Calendar size={16} />
+                  <span>Weekly</span>
+                  <span className="fleet-badge-weekly">7-Day</span>
+                </button>
+
+                <button
+                  type="button"
+                  className={`fleet-plan-btn ${durationPlan === "monthly" ? "active" : ""}`}
+                  onClick={() => setDurationPlan("monthly")}
+                >
+                  <RotateCw size={15} />
+                  <span>Monthly</span>
+                  <span className="fleet-badge-deal">Deal</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Category Filter Pills from Image 2 */}
+            <div className="fleet-category-pills-wrap">
+              {categories.map((cat) => (
+                <button
+                  key={cat.id}
+                  className={`fleet-category-pill ${
+                    selectedCategory === cat.id ? "active" : ""
+                  }`}
+                  onClick={() => setSelectedCategory(cat.id)}
+                >
+                  <span>{cat.name}</span>
+                </button>
+              ))}
+            </div>
+
+            {/* Live Filtered Cars Grid */}
+            <div className="fleet-grid-rentq" style={{ marginTop: "36px" }}>
+              {filteredFleet.map((car) => {
+                const activePrice =
+                  durationPlan === "monthly"
+                    ? car.priceMonthly
+                    : durationPlan === "weekly"
+                    ? car.priceWeekly
+                    : car.priceDaily;
+
+                return (
+                  <div key={car.id} className="car-catalog-card">
+                    <div>
+                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "4px" }}>
+                        <h3 style={{ fontSize: "1.08rem", fontWeight: 800, color: "#0f172a", lineHeight: 1.25 }}>
+                          {car.name}
+                        </h3>
+                      </div>
+                      <div style={{ fontSize: "0.76rem", color: "#64748b", textTransform: "capitalize", fontWeight: 600, marginBottom: "8px" }}>
+                        {categories.find((c) => c.id === car.category)?.name.split("(")[0].trim() || car.category}
+                      </div>
+
+                      <div className="car-photo-area">
+                        <img
+                          src={car.image}
+                          alt={`${car.name} — ${car.seats}, ${car.transmission}, ${car.fuel} car rental in Hyderabad`}
+                          loading="lazy"
+                          decoding="async"
+                          width={480}
+                          height={320}
+                        />
+                      </div>
+
+                      <div className="car-specs-ribbon">
+                        <span>{car.seats}</span>
+                        <span>•</span>
+                        <span>{car.transmission}</span>
+                        <span>•</span>
+                        <span>{car.fuel}</span>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: "14px" }}>
+                        <div>
+                          <span style={{ fontSize: "1.35rem", fontWeight: 850, color: "var(--rentq-orange)" }}>
+                            {activePrice}
+                          </span>
+                          <span style={{ fontSize: "0.78rem", color: "#64748b", fontWeight: 600 }}> / day</span>
+                        </div>
+                        <span style={{ fontSize: "0.7rem", background: "#f1f5f9", padding: "3px 8px", borderRadius: "6px", color: "#475569", fontWeight: 700, textTransform: "uppercase" }}>
+                          {durationPlan} Plan
+                        </span>
+                      </div>
+
+                      <button
+                        type="button"
+                        className="booking-submit-whatsapp-btn"
+                        style={{ padding: "10px 16px", fontSize: "0.86rem", borderRadius: "10px", marginTop: 0 }}
+                        onClick={() => setSelectedCarModal(car)}
+                      >
+                        <span>Book Now</span>
+                      </button>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        
+        {/* ========================================================
             4. HOW IT WORKS SECTION (Fourth in sequence)
             ======================================================== */}
         <section className="section-padding bg-white" id="how-it-works">
@@ -1183,143 +1321,6 @@ export default function Home() {
                   height={340}
                 />
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ========================================================
-            6. GALLERY / FLEET SECTION (Sixth in sequence)
-            - Professional & Designed Matching Image 2
-            ======================================================== */}
-        <section className="fleet-section-premium" id="gallery">
-          <div className="container">
-            {/* Header matching Image 2 */}
-            <div className="fleet-showcase-header">
-              <h2 className="fleet-showcase-title">
-                Daily, Weekly &amp; Monthly Car Rentals In Hyderabad
-              </h2>
-              <div className="fleet-showcase-accent-bar" />
-              <p className="fleet-showcase-subtext">
-                Explore top self-drive cars in Hyderabad with Manual &amp; Automatic transmissions on flexible Daily, Weekly, or Monthly plans.
-              </p>
-            </div>
-
-            {/* Duration Plan Selector Tabs from Image 2 */}
-            <div className="fleet-plan-selector-wrap">
-              <div className="fleet-plan-bar">
-                <button
-                  type="button"
-                  className={`fleet-plan-btn ${durationPlan === "daily" ? "active" : ""}`}
-                  onClick={() => setDurationPlan("daily")}
-                >
-                  <Calendar size={16} />
-                  <span>Daily</span>
-                </button>
-
-                <button
-                  type="button"
-                  className={`fleet-plan-btn ${durationPlan === "weekly" ? "active" : ""}`}
-                  onClick={() => setDurationPlan("weekly")}
-                >
-                  <Calendar size={16} />
-                  <span>Weekly</span>
-                  <span className="fleet-badge-weekly">7-Day</span>
-                </button>
-
-                <button
-                  type="button"
-                  className={`fleet-plan-btn ${durationPlan === "monthly" ? "active" : ""}`}
-                  onClick={() => setDurationPlan("monthly")}
-                >
-                  <RotateCw size={15} />
-                  <span>Monthly</span>
-                  <span className="fleet-badge-deal">Deal</span>
-                </button>
-              </div>
-            </div>
-
-            {/* Category Filter Pills from Image 2 */}
-            <div className="fleet-category-pills-wrap">
-              {categories.map((cat) => (
-                <button
-                  key={cat.id}
-                  className={`fleet-category-pill ${
-                    selectedCategory === cat.id ? "active" : ""
-                  }`}
-                  onClick={() => setSelectedCategory(cat.id)}
-                >
-                  <span>{cat.name}</span>
-                </button>
-              ))}
-            </div>
-
-            {/* Live Filtered Cars Grid */}
-            <div className="fleet-grid-rentq" style={{ marginTop: "36px" }}>
-              {filteredFleet.map((car) => {
-                const activePrice =
-                  durationPlan === "monthly"
-                    ? car.priceMonthly
-                    : durationPlan === "weekly"
-                    ? car.priceWeekly
-                    : car.priceDaily;
-
-                return (
-                  <div key={car.id} className="car-catalog-card">
-                    <div>
-                      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "4px" }}>
-                        <h3 style={{ fontSize: "1.08rem", fontWeight: 800, color: "#0f172a", lineHeight: 1.25 }}>
-                          {car.name}
-                        </h3>
-                      </div>
-                      <div style={{ fontSize: "0.76rem", color: "#64748b", textTransform: "capitalize", fontWeight: 600, marginBottom: "8px" }}>
-                        {categories.find((c) => c.id === car.category)?.name.split("(")[0].trim() || car.category}
-                      </div>
-
-                      <div className="car-photo-area">
-                        <img
-                          src={car.image}
-                          alt={`${car.name} — ${car.seats}, ${car.transmission}, ${car.fuel} car rental in Hyderabad`}
-                          loading="lazy"
-                          decoding="async"
-                          width={480}
-                          height={320}
-                        />
-                      </div>
-
-                      <div className="car-specs-ribbon">
-                        <span>{car.seats}</span>
-                        <span>•</span>
-                        <span>{car.transmission}</span>
-                        <span>•</span>
-                        <span>{car.fuel}</span>
-                      </div>
-                    </div>
-
-                    <div>
-                      <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: "14px" }}>
-                        <div>
-                          <span style={{ fontSize: "1.35rem", fontWeight: 850, color: "var(--rentq-orange)" }}>
-                            {activePrice}
-                          </span>
-                          <span style={{ fontSize: "0.78rem", color: "#64748b", fontWeight: 600 }}> / day</span>
-                        </div>
-                        <span style={{ fontSize: "0.7rem", background: "#f1f5f9", padding: "3px 8px", borderRadius: "6px", color: "#475569", fontWeight: 700, textTransform: "uppercase" }}>
-                          {durationPlan} Plan
-                        </span>
-                      </div>
-
-                      <button
-                        type="button"
-                        className="booking-submit-whatsapp-btn"
-                        style={{ padding: "10px 16px", fontSize: "0.86rem", borderRadius: "10px", marginTop: 0 }}
-                        onClick={() => setSelectedCarModal(car)}
-                      >
-                        <span>Book Now</span>
-                      </button>
-                    </div>
-                  </div>
-                );
-              })}
             </div>
           </div>
         </section>
