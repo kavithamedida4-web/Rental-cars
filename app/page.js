@@ -1283,75 +1283,75 @@ export default function Home() {
             <div className="gallery-divider"></div>
 
             <div className="gallery-masonry-grid">
-              {/* Column 1 — tall then short */}
+              {/* Column 1 — Real customer car delivery handovers */}
               <div className="gallery-masonry-item gm-tall">
+                <img
+                  src="/images/customer-delivery-5.jpg"
+                  alt="Customer taking delivery of Mahindra Thar rental in Hyderabad"
+                  className="gallery-masonry-img"
+                  loading="lazy"
+                  decoding="async"
+                  width={400}
+                  height={520}
+                />
+              </div>
+              <div className="gallery-masonry-item gm-short">
+                <img
+                  src="/images/customer-delivery-2.jpg"
+                  alt="Customer with Suzuki XL6 rental car delivery"
+                  className="gallery-masonry-img"
+                  loading="lazy"
+                  decoding="async"
+                  width={400}
+                  height={320}
+                />
+              </div>
+
+              {/* Column 2 */}
+              <div className="gallery-masonry-item gm-short">
+                <img
+                  src="/images/customer-delivery-3.jpg"
+                  alt="Customer with Baleno rental car delivery in Hyderabad"
+                  className="gallery-masonry-img"
+                  loading="lazy"
+                  decoding="async"
+                  width={400}
+                  height={320}
+                />
+              </div>
+              <div className="gallery-masonry-item gm-tall">
+                <img
+                  src="/images/customer-delivery-1.jpg"
+                  alt="Customer receiving Volkswagen Polo self-drive car"
+                  className="gallery-masonry-img"
+                  loading="lazy"
+                  decoding="async"
+                  width={400}
+                  height={520}
+                />
+              </div>
+
+              {/* Column 3 */}
+              <div className="gallery-masonry-item gm-tall">
+                <img
+                  src="/images/customer-delivery-4.jpg"
+                  alt="Customer with Maruti Suzuki Dzire rental in Hyderabad"
+                  className="gallery-masonry-img"
+                  loading="lazy"
+                  decoding="async"
+                  width={400}
+                  height={520}
+                />
+              </div>
+              <div className="gallery-masonry-item gm-short">
                 <img
                   src="/images/gallery-1-keys.jpg"
-                  alt="RENC service executive handing over car keys to customer in Hyderabad"
+                  alt="Royal Cars executive key handover in Hyderabad"
                   className="gallery-masonry-img"
                   loading="lazy"
                   decoding="async"
                   width={400}
-                  height={480}
-                />
-              </div>
-              <div className="gallery-masonry-item gm-short">
-                <img
-                  src="/images/gallery-4-interior.jpg"
-                  alt="Premium rental car interior with modern dashboard and sunroof"
-                  className="gallery-masonry-img"
-                  loading="lazy"
-                  decoding="async"
-                  width={400}
-                  height={260}
-                />
-              </div>
-
-              {/* Column 2 — short then tall */}
-              <div className="gallery-masonry-item gm-short">
-                <img
-                  src="/images/gallery-2-highway.jpg"
-                  alt="Luxury rental car on Hyderabad highway at golden hour"
-                  className="gallery-masonry-img"
-                  loading="lazy"
-                  decoding="async"
-                  width={400}
-                  height={260}
-                />
-              </div>
-              <div className="gallery-masonry-item gm-tall">
-                <img
-                  src="/images/about-driver.jpg"
-                  alt="RENC professional driver ready for customer pickup"
-                  className="gallery-masonry-img"
-                  loading="lazy"
-                  decoding="async"
-                  width={400}
-                  height={480}
-                />
-              </div>
-
-              {/* Column 3 — mid then mid */}
-              <div className="gallery-masonry-item gm-mid">
-                <img
-                  src="/images/gallery-3-inspection.jpg"
-                  alt="RENC staff inspecting rental car before handover"
-                  className="gallery-masonry-img"
-                  loading="lazy"
-                  decoding="async"
-                  width={400}
-                  height={340}
-                />
-              </div>
-              <div className="gallery-masonry-item gm-mid">
-                <img
-                  src="/images/about-service-1.jpg"
-                  alt="RENC service team delivering excellent car rental experience"
-                  className="gallery-masonry-img"
-                  loading="lazy"
-                  decoding="async"
-                  width={400}
-                  height={340}
+                  height={320}
                 />
               </div>
             </div>
