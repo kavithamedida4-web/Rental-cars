@@ -1191,6 +1191,29 @@ export default function Home() {
                 <ChevronRight size={22} />
               </button>
             </div>
+
+            {/* Bottom Controls for mobile / responsive so arrows never cover card text */}
+            <div className="reviews-bottom-controls">
+              <button
+                type="button"
+                className="reviews-bottom-nav-btn"
+                onClick={() => scrollReviews("left")}
+                aria-label="Previous review"
+              >
+                <ChevronLeft size={20} />
+              </button>
+              <div className="reviews-swipe-hint">
+                <span>Swipe or tap arrows</span>
+              </div>
+              <button
+                type="button"
+                className="reviews-bottom-nav-btn"
+                onClick={() => scrollReviews("right")}
+                aria-label="Next review"
+              >
+                <ChevronRight size={20} />
+              </button>
+            </div>
           </div>
         </section>
 

@@ -2422,18 +2422,19 @@ a {
   position: relative;
   display: flex;
   align-items: center;
+  padding: 0 54px;
 }
 
 .reviews-nav-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2441,22 +2442,62 @@ a {
   cursor: pointer;
   z-index: 10;
   transition: all 0.25s ease;
+  flex-shrink: 0;
 }
 
 .reviews-nav-btn:hover {
-  background: #ffffff;
-  border-color: var(--rentq-orange);
-  color: var(--rentq-orange);
-  transform: translateY(-50%) scale(1.08);
-  box-shadow: 0 6px 20px rgba(255, 72, 0, 0.2);
+  background: #000000;
+  border-color: #000000;
+  color: #ffffff;
+  transform: translateY(-50%) scale(1.06);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .reviews-nav-prev {
-  left: -20px;
+  left: 0;
 }
 
 .reviews-nav-next {
-  right: -20px;
+  right: 0;
+}
+
+/* Bottom Controls (for mobile / responsive) */
+.reviews-bottom-controls {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.reviews-bottom-nav-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f172a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reviews-bottom-nav-btn:hover,
+.reviews-bottom-nav-btn:active {
+  background: #000000;
+  color: #ffffff;
+  border-color: #000000;
+  transform: scale(1.05);
+}
+
+.reviews-swipe-hint {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #64748b;
+  letter-spacing: 0.02em;
 }
 
 .reviews-scroll-track {
@@ -2549,6 +2590,15 @@ a {
 }
 
 @media (max-width: 768px) {
+  .reviews-carousel-outer {
+    padding: 0;
+  }
+  .reviews-nav-btn {
+    display: none !important;
+  }
+  .reviews-bottom-controls {
+    display: flex;
+  }
   .reviews-main-title {
     font-size: 2rem;
   }
@@ -2556,12 +2606,6 @@ a {
     min-width: 290px;
     max-width: 310px;
     padding: 24px 20px;
-  }
-  .reviews-nav-prev {
-    left: -8px;
-  }
-  .reviews-nav-next {
-    right: -8px;
   }
 }
 
