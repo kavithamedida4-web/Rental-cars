@@ -434,14 +434,16 @@ a {
 
 .hero-custom-btn-group {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 14px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .hero-custom-btn-primary {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   background: #ff4800;
   color: #ffffff;
@@ -450,6 +452,7 @@ a {
   font-weight: 800;
   font-size: 0.95rem;
   text-decoration: none;
+  white-space: nowrap;
   transition: all 0.2s ease;
   box-shadow: 0 6px 18px rgba(255, 72, 0, 0.35);
 }
@@ -461,15 +464,17 @@ a {
 .hero-custom-btn-secondary {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.95);
   color: #0f172a;
   padding: 12px 24px;
   border-radius: 50px;
   font-weight: 700;
   font-size: 0.95rem;
   text-decoration: none;
-  border: 1.5px solid #e2e8f0;
+  border: 1.5px solid #ff4800;
+  white-space: nowrap;
   transition: all 0.2s ease;
   backdrop-filter: blur(8px);
 }
@@ -628,21 +633,25 @@ a {
 
   .hero-custom-btn-group {
     display: flex;
+    flex-direction: row !important;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
+    flex-wrap: nowrap;
     margin-bottom: 20px;
   }
 
   .hero-custom-btn-primary {
-    padding: 12px 22px;
-    font-size: 0.92rem;
+    padding: 10px 18px;
+    font-size: 0.85rem;
     border-radius: 50px;
+    white-space: nowrap;
   }
 
   .hero-custom-btn-secondary {
-    padding: 12px 20px;
-    font-size: 0.92rem;
+    padding: 10px 16px;
+    font-size: 0.85rem;
     border-radius: 50px;
+    white-space: nowrap;
   }
 
   /* Bottom 3-item features card on mobile */
