@@ -735,9 +735,6 @@ export default function Home() {
                   />
                 </div>
                 <div className="svc-ref-content-box svc-ref-orange-box">
-                  <div className="svc-ref-circle-badge badge-orange-theme">
-                    <Truck size={24} />
-                  </div>
                   <h3 className="svc-ref-card-title title-white">
                     Doorstep Car Delivery
                   </h3>
@@ -770,9 +767,6 @@ export default function Home() {
                   />
                 </div>
                 <div className="svc-ref-content-box svc-ref-white-box">
-                  <div className="svc-ref-circle-badge badge-white-theme">
-                    <MapPin size={24} />
-                  </div>
                   <h3 className="svc-ref-card-title title-dark">
                     Hub Self-Pickup
                   </h3>
