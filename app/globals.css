@@ -545,24 +545,22 @@ a {
   transform: translateY(-1px);
 }
 
-/* Mobile Bottom 3-Pill Quick Feature Bar Matching User Image */
+/* Desktop & Default styling for Mobile Feature Bar */
 .hero-mobile-features-bar {
   display: none;
 }
 
-@media (max-width: 768px) {
+/* Responsive & Mobile Layout */
+@media (max-width: 992px) {
   .hero-custom-split-section {
     position: relative;
     width: 100%;
-    min-height: calc(100svh - 64px);
-    height: calc(100svh - 64px);
-    max-height: 820px;
+    min-height: calc(100vh - 70px);
+    max-height: none;
+    padding-bottom: 24px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    overflow: hidden;
-    padding-bottom: 0;
   }
 
   .hero-custom-bg-wrap {
@@ -571,6 +569,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
+    order: unset;
     z-index: 1;
     pointer-events: none;
   }
@@ -580,124 +579,122 @@ a {
     height: 100%;
     object-fit: cover;
     object-position: center bottom;
-    display: block;
   }
 
   .hero-custom-overlay-content {
     position: relative;
     z-index: 3;
-    width: 100%;
-    height: 100%;
-    min-height: auto;
+    min-height: calc(100vh - 70px);
     max-height: none;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 24px 20px 20px 20px;
+    gap: 0;
   }
 
   .hero-custom-left-block {
     max-width: 100%;
     text-align: left;
     margin: 0;
-    padding-top: 4px;
+    padding-top: 10px;
   }
 
   .hero-custom-tag {
-    font-size: 0.78rem;
-    font-weight: 800;
-    color: #ff4800;
+    font-size: 0.8rem;
     letter-spacing: 0.08em;
     margin-bottom: 6px;
   }
 
   .hero-custom-heading {
-    font-size: clamp(1.85rem, 7vw, 2.3rem);
-    font-weight: 900;
-    line-height: 1.15;
-    color: #0f172a;
-    letter-spacing: -0.03em;
-    margin: 0 0 10px 0;
+    font-size: clamp(2rem, 8.5vw, 2.75rem);
+    line-height: 1.12;
+    margin-bottom: 12px;
   }
 
   .hero-custom-accent-line {
     width: 44px;
-    height: 4px;
-    background-color: #ff4800;
-    margin: 4px 0 12px 0;
+    height: 3.5px;
+    margin: 4px 0 14px 0;
   }
 
   .hero-custom-subtext {
-    font-size: clamp(0.85rem, 3.4vw, 0.95rem);
-    color: #334155;
-    line-height: 1.48;
-    margin-bottom: 18px;
-    max-width: 100%;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: #475569;
+    max-width: 320px;
+    margin-bottom: 20px;
   }
 
   .hero-custom-btn-group {
     display: flex;
     align-items: center;
-    gap: 10px;
-    flex-wrap: nowrap;
-    margin-bottom: 0;
+    gap: 12px;
+    margin-bottom: 20px;
   }
 
   .hero-custom-btn-primary {
-    padding: 11px 18px;
-    font-size: 0.88rem;
-    white-space: nowrap;
+    padding: 12px 22px;
+    font-size: 0.92rem;
     border-radius: 50px;
-    flex: 1;
-    justify-content: center;
   }
 
   .hero-custom-btn-secondary {
-    padding: 11px 16px;
-    font-size: 0.88rem;
-    white-space: nowrap;
+    padding: 12px 20px;
+    font-size: 0.92rem;
     border-radius: 50px;
-    flex: 1;
-    justify-content: center;
   }
-}
 
-/* Responsive */
-@media (min-width: 769px) and (max-width: 992px) {
-  .hero-custom-split-section {
-    min-height: auto;
-    max-height: none;
-    padding-bottom: 30px;
+  /* Bottom 3-item features card on mobile */
+  .hero-mobile-features-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.09);
+    padding: 14px 10px;
+    width: 100%;
+    margin-top: auto;
+    border: 1px solid rgba(226, 232, 240, 0.8);
   }
-  .hero-custom-overlay-content {
-    min-height: auto;
-    max-height: none;
-    gap: 30px;
-  }
-  .hero-custom-bg-wrap {
-    position: relative;
-    height: 320px;
-    order: 2;
-  }
-  .hero-custom-bg-img {
-    object-position: center center;
-  }
-  .hero-custom-booking-bar {
-    max-width: 100%;
+
+  .hero-mobile-feature-col {
+    flex: 1;
+    display: flex;
     flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
-    padding: 16px;
-    border-radius: 16px;
-  }
-  .hero-custom-booking-sep {
-    display: none;
-  }
-  .hero-custom-booking-item {
-    padding: 0;
-  }
-  .hero-custom-booking-btn {
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    text-decoration: none;
+    color: #0f172a;
+    gap: 3px;
+  }
+
+  .hero-mf-icon {
+    color: #ff4800;
+    margin-bottom: 2px;
+  }
+
+  .hero-mf-title {
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.1;
+  }
+
+  .hero-mf-sub {
+    font-size: 0.76rem;
+    font-weight: 700;
+    color: #475569;
+    line-height: 1.1;
+  }
+
+  .hero-mobile-feature-sep {
+    width: 1px;
+    height: 38px;
+    background: #e2e8f0;
+    flex-shrink: 0;
   }
 }
 
@@ -1337,296 +1334,6 @@ a {
 /* ========================================================
    ABOUT US SECTION (Twin Overlapping Circles & Features)
    ======================================================== */
-/* ========================================================
-   ABOUT US SECTION — New Construction/Corporate Layout Style
-   (Dual overlapping rectangular photos, Navy Award badge, 
-    Orange square icon boxes & Deep Navy CTA button)
-   ======================================================== */
-.about-modern-section {
-  position: relative;
-  background-color: #ffffff;
-  overflow: hidden;
-}
-
-.about-modern-layout {
-  display: grid;
-  grid-template-columns: 1fr 1.15fr;
-  gap: 70px;
-  align-items: center;
-}
-
-/* Left Column: Visual Overlapping Cluster */
-.about-modern-visual-col {
-  position: relative;
-  width: 100%;
-  max-width: 500px;
-  height: 520px;
-  margin: 0 auto;
-}
-
-/* Vertical faded brand watermark running vertically down the left */
-.about-vertical-watermark {
-  position: absolute;
-  top: 50%;
-  left: -48px;
-  transform: translateY(-50%) rotate(-90deg);
-  font-size: 3.4rem;
-  font-weight: 900;
-  letter-spacing: 0.28em;
-  color: #f1f5f9;
-  text-transform: uppercase;
-  white-space: nowrap;
-  pointer-events: none;
-  z-index: 0;
-  user-select: none;
-}
-
-/* Main Large Rectangular Photo (top-left) */
-.about-modern-photo-main {
-  position: absolute;
-  top: 0;
-  left: 20px;
-  width: 340px;
-  height: 400px;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
-  z-index: 1;
-  background: #f8fafc;
-}
-
-/* Secondary Overlapping Photo (bottom-right) */
-.about-modern-photo-overlap {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  width: 250px;
-  height: 250px;
-  border-radius: 4px;
-  overflow: hidden;
-  border: 7px solid #ffffff;
-  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.2);
-  z-index: 3;
-  background: #f8fafc;
-}
-
-.about-modern-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s ease;
-}
-
-.about-modern-photo-main:hover .about-modern-img,
-.about-modern-photo-overlap:hover .about-modern-img {
-  transform: scale(1.04);
-}
-
-/* "Best Awarded Company" Deep Navy Badge at Bottom-Left */
-.about-modern-award-badge {
-  position: absolute;
-  bottom: 25px;
-  left: 0;
-  background: #0f1c3f;
-  color: #ffffff;
-  padding: 16px 20px 16px 24px;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  z-index: 4;
-  box-shadow: 0 14px 30px rgba(15, 28, 63, 0.35);
-}
-
-.about-award-accent-bar {
-  width: 3px;
-  height: 28px;
-  background: #ff6b1a;
-  border-radius: 2px;
-  flex-shrink: 0;
-}
-
-.about-award-text {
-  font-size: 0.92rem;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  white-space: nowrap;
-}
-
-/* Right Column: Content Column */
-.about-modern-content-col {
-  display: flex;
-  flex-direction: column;
-}
-
-.about-modern-tagline {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.86rem;
-  font-weight: 700;
-  color: #64748b;
-  text-transform: capitalize;
-  margin-bottom: 12px;
-}
-
-.about-modern-tag-dash {
-  width: 18px;
-  height: 2px;
-  background: #ff6b1a;
-  display: inline-block;
-}
-
-.about-modern-heading {
-  font-size: clamp(2rem, 3.4vw, 2.75rem);
-  font-weight: 900;
-  line-height: 1.18;
-  letter-spacing: -0.025em;
-  color: #1e293b;
-  margin-bottom: 18px;
-}
-
-.about-modern-heading-accent {
-  color: #1e293b;
-}
-
-.about-modern-lead-desc {
-  font-size: 0.94rem;
-  color: #64748b;
-  line-height: 1.65;
-  margin-bottom: 28px;
-  max-width: 580px;
-}
-
-/* Feature Blocks with Orange Square Icon Boxes */
-.about-modern-feature-block {
-  margin-bottom: 22px;
-}
-
-.about-modern-feature-title {
-  font-size: 1.08rem;
-  font-weight: 800;
-  color: #1e293b;
-  margin-bottom: 8px;
-}
-
-.about-modern-feature-row {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.about-modern-icon-box {
-  width: 56px;
-  height: 56px;
-  border-radius: 6px;
-  background: linear-gradient(145deg, #ff7a1a 0%, #ff5200 100%);
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  box-shadow: 0 8px 18px rgba(255, 82, 0, 0.28);
-}
-
-.about-modern-feature-desc {
-  font-size: 0.88rem;
-  color: #64748b;
-  line-height: 1.55;
-  margin: 0;
-  max-width: 480px;
-}
-
-/* Deep Navy CTA Button: "DISCOVER FLEET" */
-.about-modern-btn-wrap {
-  margin-top: 14px;
-}
-
-.about-modern-cta-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #0f1c3f;
-  color: #ffffff;
-  font-size: 0.86rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 14px 34px;
-  border-radius: 3px;
-  text-decoration: none;
-  transition: all 0.22s ease;
-  box-shadow: 0 8px 22px rgba(15, 28, 63, 0.25);
-}
-
-.about-modern-cta-btn:hover {
-  background: #ff5200;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 26px rgba(255, 82, 0, 0.35);
-}
-
-/* Responsive adjustments */
-@media (max-width: 992px) {
-  .about-modern-layout {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-
-  .about-modern-visual-col {
-    max-width: 420px;
-    height: 450px;
-  }
-
-  .about-vertical-watermark {
-    display: none;
-  }
-
-  .about-modern-photo-main {
-    width: 290px;
-    height: 350px;
-  }
-
-  .about-modern-photo-overlap {
-    width: 210px;
-    height: 210px;
-  }
-}
-
-@media (max-width: 600px) {
-  .about-modern-visual-col {
-    width: 100%;
-    height: 380px;
-  }
-
-  .about-modern-photo-main {
-    left: 0;
-    width: 230px;
-    height: 290px;
-  }
-
-  .about-modern-photo-overlap {
-    right: 0;
-    width: 170px;
-    height: 170px;
-    border-width: 4px;
-  }
-
-  .about-modern-award-badge {
-    padding: 10px 14px;
-    left: 0;
-    bottom: 10px;
-  }
-
-  .about-award-text {
-    font-size: 0.8rem;
-  }
-
-  .about-modern-heading {
-    font-size: 1.85rem;
-  }
-}
-
 .about-split-layout {
   display: grid;
   grid-template-columns: 1fr 1.15fr;
@@ -3639,297 +3346,7 @@ a {
   .services-grid-rentq {
     grid-template-columns: repeat(2, 1fr);
   }
-  /* ========================================================
-   ABOUT US SECTION — New Construction/Corporate Layout Style
-   (Dual overlapping rectangular photos, Navy Award badge, 
-    Orange square icon boxes & Deep Navy CTA button)
-   ======================================================== */
-.about-modern-section {
-  position: relative;
-  background-color: #ffffff;
-  overflow: hidden;
-}
-
-.about-modern-layout {
-  display: grid;
-  grid-template-columns: 1fr 1.15fr;
-  gap: 70px;
-  align-items: center;
-}
-
-/* Left Column: Visual Overlapping Cluster */
-.about-modern-visual-col {
-  position: relative;
-  width: 100%;
-  max-width: 500px;
-  height: 520px;
-  margin: 0 auto;
-}
-
-/* Vertical faded brand watermark running vertically down the left */
-.about-vertical-watermark {
-  position: absolute;
-  top: 50%;
-  left: -48px;
-  transform: translateY(-50%) rotate(-90deg);
-  font-size: 3.4rem;
-  font-weight: 900;
-  letter-spacing: 0.28em;
-  color: #f1f5f9;
-  text-transform: uppercase;
-  white-space: nowrap;
-  pointer-events: none;
-  z-index: 0;
-  user-select: none;
-}
-
-/* Main Large Rectangular Photo (top-left) */
-.about-modern-photo-main {
-  position: absolute;
-  top: 0;
-  left: 20px;
-  width: 340px;
-  height: 400px;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
-  z-index: 1;
-  background: #f8fafc;
-}
-
-/* Secondary Overlapping Photo (bottom-right) */
-.about-modern-photo-overlap {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  width: 250px;
-  height: 250px;
-  border-radius: 4px;
-  overflow: hidden;
-  border: 7px solid #ffffff;
-  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.2);
-  z-index: 3;
-  background: #f8fafc;
-}
-
-.about-modern-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s ease;
-}
-
-.about-modern-photo-main:hover .about-modern-img,
-.about-modern-photo-overlap:hover .about-modern-img {
-  transform: scale(1.04);
-}
-
-/* "Best Awarded Company" Deep Navy Badge at Bottom-Left */
-.about-modern-award-badge {
-  position: absolute;
-  bottom: 25px;
-  left: 0;
-  background: #0f1c3f;
-  color: #ffffff;
-  padding: 16px 20px 16px 24px;
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  z-index: 4;
-  box-shadow: 0 14px 30px rgba(15, 28, 63, 0.35);
-}
-
-.about-award-accent-bar {
-  width: 3px;
-  height: 28px;
-  background: #ff6b1a;
-  border-radius: 2px;
-  flex-shrink: 0;
-}
-
-.about-award-text {
-  font-size: 0.92rem;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  white-space: nowrap;
-}
-
-/* Right Column: Content Column */
-.about-modern-content-col {
-  display: flex;
-  flex-direction: column;
-}
-
-.about-modern-tagline {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.86rem;
-  font-weight: 700;
-  color: #64748b;
-  text-transform: capitalize;
-  margin-bottom: 12px;
-}
-
-.about-modern-tag-dash {
-  width: 18px;
-  height: 2px;
-  background: #ff6b1a;
-  display: inline-block;
-}
-
-.about-modern-heading {
-  font-size: clamp(2rem, 3.4vw, 2.75rem);
-  font-weight: 900;
-  line-height: 1.18;
-  letter-spacing: -0.025em;
-  color: #1e293b;
-  margin-bottom: 18px;
-}
-
-.about-modern-heading-accent {
-  color: #1e293b;
-}
-
-.about-modern-lead-desc {
-  font-size: 0.94rem;
-  color: #64748b;
-  line-height: 1.65;
-  margin-bottom: 28px;
-  max-width: 580px;
-}
-
-/* Feature Blocks with Orange Square Icon Boxes */
-.about-modern-feature-block {
-  margin-bottom: 22px;
-}
-
-.about-modern-feature-title {
-  font-size: 1.08rem;
-  font-weight: 800;
-  color: #1e293b;
-  margin-bottom: 8px;
-}
-
-.about-modern-feature-row {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.about-modern-icon-box {
-  width: 56px;
-  height: 56px;
-  border-radius: 6px;
-  background: linear-gradient(145deg, #ff7a1a 0%, #ff5200 100%);
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  box-shadow: 0 8px 18px rgba(255, 82, 0, 0.28);
-}
-
-.about-modern-feature-desc {
-  font-size: 0.88rem;
-  color: #64748b;
-  line-height: 1.55;
-  margin: 0;
-  max-width: 480px;
-}
-
-/* Deep Navy CTA Button: "DISCOVER FLEET" */
-.about-modern-btn-wrap {
-  margin-top: 14px;
-}
-
-.about-modern-cta-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #0f1c3f;
-  color: #ffffff;
-  font-size: 0.86rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  padding: 14px 34px;
-  border-radius: 3px;
-  text-decoration: none;
-  transition: all 0.22s ease;
-  box-shadow: 0 8px 22px rgba(15, 28, 63, 0.25);
-}
-
-.about-modern-cta-btn:hover {
-  background: #ff5200;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 26px rgba(255, 82, 0, 0.35);
-}
-
-/* Responsive adjustments */
-@media (max-width: 992px) {
-  .about-modern-layout {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-
-  .about-modern-visual-col {
-    max-width: 420px;
-    height: 450px;
-  }
-
-  .about-vertical-watermark {
-    display: none;
-  }
-
-  .about-modern-photo-main {
-    width: 290px;
-    height: 350px;
-  }
-
-  .about-modern-photo-overlap {
-    width: 210px;
-    height: 210px;
-  }
-}
-
-@media (max-width: 600px) {
-  .about-modern-visual-col {
-    width: 100%;
-    height: 380px;
-  }
-
-  .about-modern-photo-main {
-    left: 0;
-    width: 230px;
-    height: 290px;
-  }
-
-  .about-modern-photo-overlap {
-    right: 0;
-    width: 170px;
-    height: 170px;
-    border-width: 4px;
-  }
-
-  .about-modern-award-badge {
-    padding: 10px 14px;
-    left: 0;
-    bottom: 10px;
-  }
-
-  .about-award-text {
-    font-size: 0.8rem;
-  }
-
-  .about-modern-heading {
-    font-size: 1.85rem;
-  }
-}
-
-.about-split-layout {
+  .about-split-layout {
     grid-template-columns: 1fr;
   }
   .fleet-grid-rentq {
