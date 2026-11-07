@@ -341,369 +341,167 @@ a {
    ======================================================== */
 
 /* ========================================================
-   WAVE HERO SECTION — White top + orange wave/car bottom
+   CUSTOM HERO SECTION — With User Provided Diagonal Car Image
    ======================================================== */
-.hero-wave-section {
+.hero-custom-split-section {
   position: relative;
   width: 100%;
-  background: #ffffff;
-  overflow: hidden;
+  min-height: calc(100vh - 72px);
+  max-height: 860px;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  min-height: 90vh;
-}
-
-/* ---- Top white content area ---- */
-.hero-wave-top {
-  position: relative;
-  z-index: 3;
-  text-align: center;
-  padding: clamp(40px, 6vh, 70px) clamp(20px, 6vw, 120px) 32px;
-}
-
-.hero-wave-tagline {
-  font-size: 0.95rem;
-  color: #94a3b8;
-  font-style: italic;
-  margin-bottom: 14px;
-  letter-spacing: 0.03em;
-}
-
-.hero-wave-heading {
-  font-size: clamp(2rem, 4vw, 3.4rem);
-  font-weight: 900;
-  color: #0f172a;
-  line-height: 1.1;
-  letter-spacing: -0.03em;
-  margin: 0 auto 32px auto;
-  max-width: 760px;
-}
-
-.hero-wave-heading-accent {
-  color: #ff4800;
-}
-
-/* Booking bar */
-.hero-wave-booking-bar {
-  display: inline-flex;
-  align-items: center;
-  background: #ffffff;
-  border: 1.5px solid #e2e8f0;
-  border-radius: 60px;
-  padding: 10px 10px 10px 24px;
-  box-shadow: 0 8px 36px rgba(0,0,0,0.10);
-  gap: 0;
-  max-width: 900px;
-  width: 100%;
-}
-
-.hero-wave-booking-field {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2px;
-  flex: 1;
-  padding: 4px 16px;
-  cursor: pointer;
-}
-
-.hero-wave-field-label {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: #94a3b8;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
-.hero-wave-field-value {
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: #0f172a;
-}
-
-.hero-wave-booking-sep {
-  width: 1px;
-  height: 40px;
-  background: #e2e8f0;
-  flex-shrink: 0;
-}
-
-.hero-wave-search-btn {
-  background: #ff4800;
-  color: #ffffff;
-  font-weight: 800;
-  font-size: 0.8rem;
-  line-height: 1.3;
-  padding: 12px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  text-align: center;
-  white-space: pre-line;
-  flex-shrink: 0;
-  transition: background 0.2s, transform 0.2s;
-  box-shadow: 0 6px 20px rgba(255,72,0,0.35);
-}
-.hero-wave-search-btn:hover {
-  background: #e63c00;
-  transform: scale(1.03);
-}
-
-/* ---- Bottom orange wave + car ---- */
-.hero-wave-bottom {
-  position: relative;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  min-height: 400px;
-}
-
-/* Orange half-circle / wave shape */
-.hero-wave-orange-bg {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 130%;
-  height: 75%;
-  background: linear-gradient(170deg, #ff6b1a 0%, #ff4800 50%, #e63c00 100%);
-  border-radius: 50% 50% 0 0 / 30% 30% 0 0;
-  z-index: 0;
-}
-
-/* Car image */
-.hero-wave-car-img {
-  position: relative;
-  z-index: 2;
-  width: 80%;
-  max-width: 900px;
-  height: auto;
-  object-fit: contain;
-  object-position: bottom center;
-  display: block;
-  margin: 0 auto;
-  margin-top: auto;
-}
-
-/* Bottom description row */
-.hero-wave-bottom-row {
-  position: relative;
-  z-index: 3;
-  display: flex;
-  align-items: flex-end;
   justify-content: space-between;
-  padding: 16px clamp(24px, 5vw, 80px) 24px;
-  gap: 20px;
-}
-
-.hero-wave-bottom-desc {
-  font-size: 0.82rem;
-  color: rgba(255,255,255,0.85);
-  max-width: 340px;
-  line-height: 1.5;
-}
-
-.hero-wave-bottom-links {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.hero-wave-bottom-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: rgba(255,255,255,0.90);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-.hero-wave-bottom-link:hover { color: #ffffff; }
-
-.hero-wave-bottom-link-orange {
-  background: rgba(255,255,255,0.15);
-  padding: 8px 16px;
-  border-radius: 50px;
-  color: #ffffff;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  .hero-wave-top {
-    padding: 32px 20px 20px;
-  }
-  .hero-wave-booking-bar {
-    flex-direction: column;
-    border-radius: 20px;
-    padding: 16px;
-    gap: 12px;
-    align-items: stretch;
-  }
-  .hero-wave-booking-sep { display: none; }
-  .hero-wave-booking-field { padding: 0; }
-  .hero-wave-search-btn {
-    border-radius: 12px;
-    padding: 14px;
-    white-space: nowrap;
-    font-size: 0.95rem;
-  }
-  .hero-wave-bottom { min-height: 300px; }
-  .hero-wave-car-img { width: 100%; }
-  .hero-wave-bottom-row { flex-direction: column; align-items: flex-start; }
-}
-
-/* ========================================================
-   OLD SPLIT HERO (kept for reference but replaced)
-   ======================================================== */
-.hero-split-section {
-  position: relative;
-  width: 100%;
-  min-height: 90vh;
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
   overflow: hidden;
-  background: #ffffff;
 }
 
-/* Orange diagonal background — covers right 55% with a diagonal cut */
-.hero-split-orange-bg {
+.hero-custom-bg-wrap {
   position: absolute;
   top: 0;
-  right: 0;
-  width: 56%;
+  left: 0;
+  width: 100%;
   height: 100%;
-  background: linear-gradient(160deg, #ff6b1a 0%, #ff4800 55%, #e63c00 100%);
-  clip-path: polygon(14% 0%, 100% 0%, 100% 100%, 0% 100%);
-  z-index: 0;
+  z-index: 1;
+  pointer-events: none;
 }
 
-/* Left content column */
-.hero-split-left {
+.hero-custom-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+  display: block;
+}
+
+.hero-custom-overlay-content {
   position: relative;
-  z-index: 2;
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding: clamp(60px, 8vh, 100px) clamp(24px, 4vw, 60px) clamp(40px, 6vh, 80px) clamp(24px, 6vw, 100px);
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  min-height: calc(100vh - 72px);
+  max-height: 860px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 0;
+  justify-content: space-between;
+  padding-top: clamp(36px, 6vh, 60px);
+  padding-bottom: clamp(24px, 4vh, 40px);
 }
 
-.hero-split-tag {
-  font-size: 1.1rem;
+.hero-custom-left-block {
+  max-width: 580px;
+  text-align: left;
+}
+
+.hero-custom-tag {
+  display: inline-block;
+  font-size: 0.88rem;
   font-weight: 800;
   color: #ff4800;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
-.hero-split-heading {
-  font-size: clamp(2rem, 3.5vw, 3.2rem);
+.hero-custom-heading {
+  font-size: clamp(2rem, 3.8vw, 3.2rem);
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.15;
   color: #0f172a;
-  margin: 0 0 10px 0;
   letter-spacing: -0.03em;
+  margin: 0 0 10px 0;
 }
 
-.hero-split-heading-accent {
+.hero-custom-heading-accent {
   color: #ff4800;
 }
 
-.hero-split-accent-bar {
+.hero-custom-accent-line {
   width: 54px;
   height: 4px;
-  background: #ff4800;
-  border-radius: 3px;
-  margin-bottom: 16px;
+  background-color: #ff4800;
+  border-radius: 2px;
+  margin: 6px 0 16px 0;
 }
 
-.hero-split-subtext {
-  font-size: clamp(0.88rem, 1.1vw, 1rem);
+.hero-custom-subtext {
+  font-size: clamp(0.9rem, 1.15vw, 1.05rem);
   color: #475569;
   line-height: 1.6;
-  margin-bottom: 28px;
-  max-width: 420px;
+  margin-bottom: 24px;
+  max-width: 480px;
 }
 
-/* CTA Buttons */
-.hero-split-btn-group {
+.hero-custom-btn-group {
   display: flex;
   align-items: center;
   gap: 14px;
   flex-wrap: wrap;
-  margin-bottom: 36px;
 }
 
-.hero-split-btn-primary {
+.hero-custom-btn-primary {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
+  gap: 8px;
   background: #ff4800;
   color: #ffffff;
-  padding: 13px 28px;
+  padding: 12px 28px;
   border-radius: 50px;
   font-weight: 800;
   font-size: 0.95rem;
   text-decoration: none;
-  transition: background 0.2s, transform 0.2s;
-  box-shadow: 0 6px 20px rgba(255, 72, 0, 0.35);
+  transition: all 0.2s ease;
+  box-shadow: 0 6px 18px rgba(255, 72, 0, 0.35);
 }
-.hero-split-btn-primary:hover {
+.hero-custom-btn-primary:hover {
   background: #e63c00;
   transform: translateY(-2px);
 }
 
-.hero-split-btn-secondary {
+.hero-custom-btn-secondary {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
-  background: #ffffff;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.92);
   color: #0f172a;
-  padding: 13px 24px;
+  padding: 12px 24px;
   border-radius: 50px;
   font-weight: 700;
   font-size: 0.95rem;
   text-decoration: none;
-  border: 2px solid #e2e8f0;
-  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  border: 1.5px solid #e2e8f0;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(8px);
 }
-.hero-split-btn-secondary:hover {
+.hero-custom-btn-secondary:hover {
   border-color: #ff4800;
-  box-shadow: 0 4px 14px rgba(255,72,0,0.12);
+  box-shadow: 0 4px 14px rgba(255, 72, 0, 0.15);
   transform: translateY(-2px);
 }
 
-/* Booking Bar at bottom of left column */
-.hero-split-booking-bar {
-  display: flex;
+/* Floating booking bar at bottom left */
+.hero-custom-booking-bar {
+  display: inline-flex;
   align-items: center;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(226, 232, 240, 0.8);
   border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
-  padding: 14px 18px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
+  padding: 12px 16px;
+  max-width: 660px;
   width: 100%;
-  max-width: 580px;
-  flex-wrap: wrap;
-  gap: 8px;
+  backdrop-filter: blur(12px);
+  margin-top: 24px;
 }
 
-.hero-booking-item {
+.hero-custom-booking-item {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 2px;
   flex: 1;
-  min-width: 120px;
+  padding: 0 12px;
 }
 
-.hero-booking-label {
+.hero-custom-booking-lbl {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -714,99 +512,74 @@ a {
   letter-spacing: 0.05em;
 }
 
-.hero-booking-value {
-  font-size: 0.85rem;
+.hero-custom-booking-val {
+  font-size: 0.88rem;
   font-weight: 700;
   color: #0f172a;
+  white-space: nowrap;
 }
 
-.hero-booking-divider {
+.hero-custom-booking-sep {
   width: 1px;
-  height: 36px;
+  height: 34px;
   background: #e2e8f0;
-  margin: 0 10px;
   flex-shrink: 0;
 }
 
-.hero-booking-search-btn {
+.hero-custom-booking-btn {
   background: #ff4800;
   color: #ffffff;
   font-weight: 800;
   font-size: 0.88rem;
-  padding: 11px 22px;
+  padding: 12px 22px;
   border-radius: 10px;
   text-decoration: none;
   white-space: nowrap;
-  transition: background 0.2s;
+  transition: all 0.2s ease;
   flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(255, 72, 0, 0.3);
 }
-.hero-booking-search-btn:hover {
+.hero-custom-booking-btn:hover {
   background: #e63c00;
+  transform: translateY(-1px);
 }
 
-/* Right image column — sits above orange diagonal bg */
-.hero-split-right {
-  position: relative;
-  z-index: 2;
-  flex: 1;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 0;
-  overflow: hidden;
-}
-
-/* Car image: contain so the generated gradient car image shows properly over the orange bg */
-.hero-split-car-img {
-  width: 110%;
-  max-width: 820px;
-  height: auto;
-  object-fit: contain;
-  object-position: bottom center;
-  margin-left: -5%;
-  margin-bottom: 0;
-}
-
-/* ===================== MOBILE ===================== */
-@media (max-width: 900px) {
-  .hero-split-section {
-    flex-direction: column;
+/* Responsive */
+@media (max-width: 992px) {
+  .hero-custom-split-section {
     min-height: auto;
+    max-height: none;
+    padding-bottom: 30px;
   }
-  .hero-split-orange-bg {
-    width: 100%;
-    top: 55%;
-    height: 45%;
-    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+  .hero-custom-overlay-content {
+    min-height: auto;
+    max-height: none;
+    gap: 30px;
   }
-  .hero-split-left {
-    flex: none;
+  .hero-custom-bg-wrap {
+    position: relative;
+    height: 320px;
+    order: 2;
+  }
+  .hero-custom-bg-img {
+    object-position: center center;
+  }
+  .hero-custom-booking-bar {
     max-width: 100%;
-    padding: 48px 20px 24px 20px;
-    align-items: center;
-    text-align: center;
-  }
-  .hero-split-heading { font-size: 2rem; }
-  .hero-split-subtext { max-width: 100%; }
-  .hero-split-accent-bar { margin: 0 auto 16px auto; }
-  .hero-split-btn-group { justify-content: center; }
-  .hero-split-booking-bar {
     flex-direction: column;
     align-items: stretch;
-    max-width: 100%;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 16px;
   }
-  .hero-booking-divider { display: none; }
-  .hero-split-right {
-    flex: none;
-    height: 280px;
-    justify-content: center;
+  .hero-custom-booking-sep {
+    display: none;
   }
-  .hero-split-car-img {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    object-fit: cover;
-    object-position: center bottom;
+  .hero-custom-booking-item {
+    padding: 0;
+  }
+  .hero-custom-booking-btn {
+    text-align: center;
   }
 }
 
