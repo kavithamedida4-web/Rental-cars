@@ -1262,10 +1262,21 @@ export default function Home() {
               </div>
 
               {/* Column 3 */}
-              <div className="gallery-masonry-item gm-tall">
+              <div className="gallery-masonry-item gm-short">
                 <img
                   src="/images/customer-delivery-4.jpg"
-                  alt="Customer with Maruti Suzuki Dzire rental in Hyderabad"
+                  alt="Customer with Maruti Suzuki car delivery in Hyderabad"
+                  className="gallery-masonry-img"
+                  loading="lazy"
+                  decoding="async"
+                  width={400}
+                  height={320}
+                />
+              </div>
+              <div className="gallery-masonry-item gm-tall">
+                <img
+                  src="/images/customer-delivery-6.jpg"
+                  alt="Customer with blue Maruti Suzuki Swift rental delivery in Hyderabad"
                   className="gallery-masonry-img"
                   loading="lazy"
                   decoding="async"
