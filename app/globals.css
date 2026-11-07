@@ -341,7 +341,222 @@ a {
    ======================================================== */
 
 /* ========================================================
-   SPLIT HERO SECTION — White Left + Orange Diagonal Right
+   WAVE HERO SECTION — White top + orange wave/car bottom
+   ======================================================== */
+.hero-wave-section {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+/* ---- Top white content area ---- */
+.hero-wave-top {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: clamp(40px, 6vh, 70px) clamp(20px, 6vw, 120px) 32px;
+}
+
+.hero-wave-tagline {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  font-style: italic;
+  margin-bottom: 14px;
+  letter-spacing: 0.03em;
+}
+
+.hero-wave-heading {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 900;
+  color: #0f172a;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin: 0 auto 32px auto;
+  max-width: 760px;
+}
+
+.hero-wave-heading-accent {
+  color: #ff4800;
+}
+
+/* Booking bar */
+.hero-wave-booking-bar {
+  display: inline-flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 60px;
+  padding: 10px 10px 10px 24px;
+  box-shadow: 0 8px 36px rgba(0,0,0,0.10);
+  gap: 0;
+  max-width: 900px;
+  width: 100%;
+}
+
+.hero-wave-booking-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  flex: 1;
+  padding: 4px 16px;
+  cursor: pointer;
+}
+
+.hero-wave-field-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hero-wave-field-value {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.hero-wave-booking-sep {
+  width: 1px;
+  height: 40px;
+  background: #e2e8f0;
+  flex-shrink: 0;
+}
+
+.hero-wave-search-btn {
+  background: #ff4800;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  white-space: pre-line;
+  flex-shrink: 0;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 6px 20px rgba(255,72,0,0.35);
+}
+.hero-wave-search-btn:hover {
+  background: #e63c00;
+  transform: scale(1.03);
+}
+
+/* ---- Bottom orange wave + car ---- */
+.hero-wave-bottom {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+}
+
+/* Orange half-circle / wave shape */
+.hero-wave-orange-bg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130%;
+  height: 75%;
+  background: linear-gradient(170deg, #ff6b1a 0%, #ff4800 50%, #e63c00 100%);
+  border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+  z-index: 0;
+}
+
+/* Car image */
+.hero-wave-car-img {
+  position: relative;
+  z-index: 2;
+  width: 80%;
+  max-width: 900px;
+  height: auto;
+  object-fit: contain;
+  object-position: bottom center;
+  display: block;
+  margin: 0 auto;
+  margin-top: auto;
+}
+
+/* Bottom description row */
+.hero-wave-bottom-row {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 16px clamp(24px, 5vw, 80px) 24px;
+  gap: 20px;
+}
+
+.hero-wave-bottom-desc {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.85);
+  max-width: 340px;
+  line-height: 1.5;
+}
+
+.hero-wave-bottom-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-wave-bottom-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.90);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.hero-wave-bottom-link:hover { color: #ffffff; }
+
+.hero-wave-bottom-link-orange {
+  background: rgba(255,255,255,0.15);
+  padding: 8px 16px;
+  border-radius: 50px;
+  color: #ffffff;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-wave-top {
+    padding: 32px 20px 20px;
+  }
+  .hero-wave-booking-bar {
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 16px;
+    gap: 12px;
+    align-items: stretch;
+  }
+  .hero-wave-booking-sep { display: none; }
+  .hero-wave-booking-field { padding: 0; }
+  .hero-wave-search-btn {
+    border-radius: 12px;
+    padding: 14px;
+    white-space: nowrap;
+    font-size: 0.95rem;
+  }
+  .hero-wave-bottom { min-height: 300px; }
+  .hero-wave-car-img { width: 100%; }
+  .hero-wave-bottom-row { flex-direction: column; align-items: flex-start; }
+}
+
+/* ========================================================
+   OLD SPLIT HERO (kept for reference but replaced)
    ======================================================== */
 .hero-split-section {
   position: relative;

@@ -502,83 +502,90 @@ export default function Home() {
 
       <main>
         {/* ========================================================
-            1. HERO SECTION (Split Layout — White Left + Orange Diagonal Right)
+            1. HERO SECTION — White top, booking bar, orange wave + car
             ======================================================== */}
-        <section className="hero-split-section" id="hero">
-          {/* Orange diagonal background shape */}
-          <div className="hero-split-orange-bg" aria-hidden="true" />
+        <section className="hero-wave-section" id="hero">
 
-          {/* Left Column: Text Content */}
-          <div className="hero-split-left">
-            <p className="hero-split-tag">Best Car</p>
-            <h1 className="hero-split-heading">
-              Daily, Weekly &amp;<br />Monthly Car Rentals<br />
-              <span className="hero-split-heading-accent">in Hyderabad</span>
+          {/* Top Text Content */}
+          <div className="hero-wave-top">
+            <p className="hero-wave-tagline">Your journey · Your car · Your way</p>
+            <h1 className="hero-wave-heading">
+              Premium car rental services<br />
+              across <span className="hero-wave-heading-accent">Hyderabad,</span> made simple.
             </h1>
-            <div className="hero-split-accent-bar" />
-            <p className="hero-split-subtext">
-              Self-drive &amp; luxury cars with instant doorstep delivery across Hyderabad.
-            </p>
 
-            {/* CTA Buttons */}
-            <div className="hero-split-btn-group">
-              <a href="#gallery" className="hero-split-btn-primary">
-                <span>Explore Fleet</span>
-                <ArrowUpRight size={16} />
-              </a>
-              <a
-                href="https://wa.me/917396662420?text=Hello%20Royal%20Cars%2C%20I%20want%20to%20rent%20a%20car"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hero-split-btn-secondary"
-              >
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="#25d366" style={{ flexShrink: 0 }}>
-                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15ZM16.57 14.39C16.32 14.27 15.1 13.67 14.87 13.58C14.64 13.5 14.48 13.45 14.31 13.7C14.15 13.95 13.67 14.52 13.53 14.68C13.38 14.85 13.24 14.87 12.99 14.75C12.74 14.62 11.94 14.36 10.99 13.52C10.25 12.86 9.75 12.05 9.61 11.8C9.46 11.55 9.59 11.42 9.72 11.3C9.83 11.19 9.97 11.01 10.09 10.87C10.22 10.73 10.26 10.62 10.34 10.46C10.42 10.29 10.38 10.15 10.32 10.03C10.26 9.9 9.76 8.68 9.56 8.17C9.36 7.67 9.16 7.74 9.01 7.73C8.87 7.72 8.71 7.72 8.54 7.72C8.38 7.72 8.11 7.78 7.89 8.03C7.66 8.27 7.02 8.87 7.02 10.1C7.02 11.33 7.91 12.51 8.04 12.68C8.16 12.84 9.79 15.36 12.28 16.43C12.87 16.69 13.33 16.84 13.69 16.96C14.29 17.15 14.83 17.12 15.26 17.06C15.74 16.99 16.74 16.45 16.95 15.87C17.16 15.29 17.16 14.79 17.09 14.68C17.03 14.57 16.82 14.51 16.57 14.39Z" />
-                </svg>
-                <span>Instant Booking</span>
-              </a>
-            </div>
-
-            {/* Bottom Booking Bar */}
-            <div className="hero-split-booking-bar">
-              <div className="hero-booking-item">
-                <span className="hero-booking-label">
-                  <Car size={15} /> Select Your Car
+            {/* Booking Bar */}
+            <div className="hero-wave-booking-bar">
+              <div className="hero-wave-booking-field">
+                <span className="hero-wave-field-label">
+                  <MapPin size={14} /> Pick-up Location
                 </span>
-                <span className="hero-booking-value">Car Matic / Manual</span>
+                <span className="hero-wave-field-value">Hyderabad, Telangana</span>
               </div>
-              <div className="hero-booking-divider" />
-              <div className="hero-booking-item">
-                <span className="hero-booking-label">
-                  <MapPin size={15} /> Where to Pick-Up
+              <div className="hero-wave-booking-sep" />
+              <div className="hero-wave-booking-field">
+                <span className="hero-wave-field-label">
+                  <Calendar size={14} /> Pick-up Date
                 </span>
-                <span className="hero-booking-value">Hyderabad, Telangana</span>
+                <span className="hero-wave-field-value">Select Date</span>
               </div>
-              <div className="hero-booking-divider" />
-              <div className="hero-booking-item">
-                <span className="hero-booking-label">
-                  <Calendar size={15} /> Duration
+              <div className="hero-wave-booking-sep" />
+              <div className="hero-wave-booking-field">
+                <span className="hero-wave-field-label">
+                  <Calendar size={14} /> Return Date
                 </span>
-                <span className="hero-booking-value">Daily / Weekly / Monthly</span>
+                <span className="hero-wave-field-value">Select Date</span>
               </div>
-              <a href="#gallery" className="hero-booking-search-btn">
-                Search Now
+              <div className="hero-wave-booking-sep" />
+              <div className="hero-wave-booking-field">
+                <span className="hero-wave-field-label">
+                  <Car size={14} /> Car Type
+                </span>
+                <span className="hero-wave-field-value">All Vehicles ▾</span>
+              </div>
+              <a href="#gallery" className="hero-wave-search-btn">
+                Search<br />Available<br />Cars
               </a>
             </div>
           </div>
 
-          {/* Right Column: Car Image over orange diagonal */}
-          <div className="hero-split-right">
+          {/* Orange Wave + Car Bottom */}
+          <div className="hero-wave-bottom">
+            {/* Orange wave shape */}
+            <div className="hero-wave-orange-bg" aria-hidden="true" />
+
+            {/* Car image sitting on the wave */}
             <img
-              src="/images/hero-split-car.png"
-              alt="Royal Cars luxury rental car in Hyderabad — compact SUV for self-drive"
-              className="hero-split-car-img"
+              src="/images/hero-orange-wave.png"
+              alt="Royal Cars luxury orange sports car for self-drive rental in Hyderabad"
+              className="hero-wave-car-img"
               loading="eager"
               fetchPriority="high"
               decoding="async"
-              width={700}
+              width={1200}
               height={500}
+              onError={(e) => { e.target.src = "/images/hero-fleet-4k.png"; e.target.style.objectFit="cover"; }}
             />
+
+            {/* Bottom row */}
+            <div className="hero-wave-bottom-row">
+              <p className="hero-wave-bottom-desc">
+                Self-drive &amp; luxury cars — daily, weekly or monthly rentals with doorstep delivery across Hyderabad.
+              </p>
+              <div className="hero-wave-bottom-links">
+                <a href="#gallery" className="hero-wave-bottom-link">
+                  <ArrowUpRight size={14} /> Browse Cars
+                </a>
+                <a
+                  href="https://wa.me/917396662420?text=Hello%20Royal%20Cars%2C%20I%20want%20to%20rent%20a%20car"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hero-wave-bottom-link hero-wave-bottom-link-orange"
+                >
+                  <ArrowUpRight size={14} /> Instant Booking
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
