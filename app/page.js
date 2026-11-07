@@ -7,6 +7,7 @@ import {
   MapPin,
   ArrowUpRight,
   Shield,
+  ShieldCheck,
   Truck,
   Zap,
   Check,
@@ -508,7 +509,7 @@ export default function Home() {
           {/* Background Image: 4K Ultra High-Res Custom Render Matching User Style */}
           <div className="hero-custom-bg-wrap">
             <picture>
-              <source media="(max-width: 768px)" srcSet="/images/hero-user-car.png" />
+              <source media="(max-width: 768px)" srcSet="/images/hero-mobile-orange-bg.jpg" />
               <img
                 src="/images/hero-orange-split-4k.jpg"
                 alt="Royal Cars Hyderabad - Daily, Weekly & Monthly Self Drive Rentals"
@@ -556,6 +557,35 @@ export default function Home() {
                   <span>Instant Booking</span>
                 </a>
               </div>
+            </div>
+
+            {/* Mobile Bottom 3-Pill Quick Feature Bar Matching User Image */}
+            <div className="hero-mobile-features-bar">
+              <a href="#gallery" className="hero-mobile-feat-item">
+                <div className="hero-mobile-feat-icon">
+                  <Car size={22} color="#ff4800" strokeWidth={2.4} />
+                </div>
+                <span className="hero-mobile-feat-text">Explore<br />Fleet</span>
+              </a>
+              <div className="hero-mobile-feat-divider" />
+              <a
+                href="https://wa.me/917396662420?text=Hello%20Royal%20Cars%2C%20I%20want%20to%20rent%20a%20car"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-mobile-feat-item"
+              >
+                <div className="hero-mobile-feat-icon">
+                  <Zap size={22} color="#ff4800" strokeWidth={2.4} />
+                </div>
+                <span className="hero-mobile-feat-text">Instant<br />Booking</span>
+              </a>
+              <div className="hero-mobile-feat-divider" />
+              <a href="#about" className="hero-mobile-feat-item">
+                <div className="hero-mobile-feat-icon">
+                  <ShieldCheck size={22} color="#ff4800" strokeWidth={2.4} />
+                </div>
+                <span className="hero-mobile-feat-text">Safe &amp;<br />Reliable</span>
+              </a>
             </div>
           </div>
         </section>
