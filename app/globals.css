@@ -987,11 +987,11 @@ a {
 }
 
 .svc-ref-title {
-  font-size: clamp(1.48rem, 2.1vw, 1.95rem);
-  font-weight: 800;
-  color: #11141a;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
+  font-size: clamp(2rem, 3.4vw, 2.75rem);
+  font-weight: 900;
+  color: #0f172a;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
   margin: 0;
 }
 
@@ -1005,6 +1005,9 @@ a {
 }
 
 @media (max-width: 768px) {
+  .svc-ref-title {
+    font-size: clamp(1.65rem, 6vw, 2.2rem);
+  }
   .svc-ref-grid {
     grid-template-columns: 1fr;
     gap: 22px;
