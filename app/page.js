@@ -509,7 +509,7 @@ export default function Home() {
           {/* Background Image: 4K Ultra High-Res Custom Render Matching User Style */}
           <div className="hero-custom-bg-wrap">
             <picture>
-              <source media="(max-width: 768px)" srcSet="/images/hero-mobile-custom.jpg" />
+              <source media="(max-width: 768px)" srcSet="/images/hero-mobile-orange-bg.jpg" />
               <img
                 src="/images/hero-orange-split-4k.jpg"
                 alt="Royal Cars Hyderabad - Daily, Weekly & Monthly Self Drive Rentals"
@@ -562,94 +562,95 @@ export default function Home() {
         </section>
 
         {/* ========================================================
-            2. ABOUT US SECTION (Second in sequence)
+            2. ABOUT US SECTION (Design matching user reference: dual rectangular photos, badge, orange icons & navy CTA)
             ======================================================== */}
-        <section className="section-padding bg-white" id="about">
+        <section className="about-modern-section section-padding bg-white" id="about">
           <div className="container">
-            <div className="about-split-layout">
-              {/* Left Column: Twin Overlapping Circular Photos of Indian Service Men in Orange T-Shirts */}
-              <div className="about-circles-cluster">
-                {/* Back / Top-Left Capsule Arch: Indian serviceman in orange polo t-shirt sitting in car with open door */}
-                <div className="about-circle-main">
+            <div className="about-modern-layout">
+              {/* Left Column: Overlapping Photos with Navy Badge & Vertical Brand Text */}
+              <div className="about-modern-visual-col">
+                {/* Vertical faded watermark brand text */}
+                <div className="about-vertical-watermark">ROYAL CARS</div>
+
+                {/* Main Large Photo (Consultation / Car keys handover) */}
+                <div className="about-modern-photo-main">
                   <img
-                    src="/images/about-service-arch.jpg"
-                    alt="Indian car rental service professional in orange polo t-shirt sitting in luxury car with open door"
-                    className="about-circle-img"
+                    src="/images/about-modern-main.jpg"
+                    alt="Royal Cars Hyderabad professional team helping customer with self drive car rental"
+                    className="about-modern-img"
                     loading="lazy"
                     decoding="async"
-                    width={320}
-                    height={320}
+                    width={420}
+                    height={460}
                   />
                 </div>
 
-                {/* Front / Bottom-Right Overlapping Circle: Indian serviceman in orange t-shirt handing car keys */}
-                <div className="about-circle-overlap">
+                {/* Overlapping Secondary Photo (Fleet Inspection / Detailing) */}
+                <div className="about-modern-photo-overlap">
                   <img
-                    src="/images/about-service-2.jpg"
-                    alt="Indian car rental executive in orange polo t-shirt handing over car keys to customer"
-                    className="about-circle-img"
+                    src="/images/about-modern-secondary.jpg"
+                    alt="Royal Cars fleet maintenance and sanitized car inspection"
+                    className="about-modern-img"
                     loading="lazy"
                     decoding="async"
-                    width={320}
-                    height={320}
+                    width={280}
+                    height={280}
                   />
+                </div>
+
+                {/* Navy Blue "Best Awarded Company" Badge */}
+                <div className="about-modern-award-badge">
+                  <span className="about-award-accent-bar" />
+                  <span className="about-award-text">Best Awarded Company</span>
                 </div>
               </div>
 
-              {/* Right Column: Content matching reference design */}
-              <div className="about-content-col">
-                <div className="about-tag-badge">
-                  <span className="about-tag-square"></span>
-                  <span>About Us</span>
+              {/* Right Column: Clean Content Matching Reference Design */}
+              <div className="about-modern-content-col">
+                <div className="about-modern-tagline">
+                  <span className="about-modern-tag-dash" />
+                  <span>About Company</span>
                 </div>
 
-                <h2 className="about-main-heading">
-                  Your trusted partner in reliable car rental
+                <h2 className="about-modern-heading">
+                  World largest &amp; trusted<br />
+                  <span className="about-modern-heading-accent">car rental co.</span>
                 </h2>
 
-                <p className="about-lead-desc">
+                <p className="about-modern-lead-desc">
                   We are committed to delivering seamless self-drive freedom across Hyderabad. From pristine compact hatchbacks to executive luxury sedans and flagship SUVs, our fleet is fully serviced, sanitized, and ready for your next adventure.
                 </p>
 
-                <div className="about-features-card-list">
-                  {/* Feature 1: Easy Booking Process */}
-                  <div className="about-feature-item">
-                    <div className="about-feature-icon-circle">
-                      <Smartphone size={22} />
+                {/* Feature 1: Worldwide Manufacture / Reliable Fleet Network */}
+                <div className="about-modern-feature-block">
+                  <h3 className="about-modern-feature-title">Reliable Fleet Network</h3>
+                  <div className="about-modern-feature-row">
+                    <div className="about-modern-icon-box">
+                      <Car size={26} strokeWidth={2.2} />
                     </div>
-                    <div>
-                      <h3 className="about-feature-title">
-                        Easy Booking Process
-                      </h3>
-                      <p className="about-feature-text">
-                        We Have Optimized The Booking Process So That Our Clients Can Experience The Easiest And The Safest Service.
-                      </p>
-                    </div>
-                  </div>
-
-                  {/* Feature Divider */}
-                  <div className="about-feature-divider" />
-
-                  {/* Feature 2: Convenient Pick-Up & Return Process */}
-                  <div className="about-feature-item">
-                    <div className="about-feature-icon-circle">
-                      <KeyRound size={22} />
-                    </div>
-                    <div>
-                      <h3 className="about-feature-title">
-                        Convenient Pick-Up &amp; Return Process
-                      </h3>
-                      <p className="about-feature-text">
-                        We Have Optimized The Booking Process So That Our Clients Can Experience The Easiest And The Safest Service.
-                      </p>
-                    </div>
+                    <p className="about-modern-feature-desc">
+                      Explore 38+ verified cars with manual and automatic transmissions with instant doorstep delivery across Hyderabad.
+                    </p>
                   </div>
                 </div>
 
-                {/* Contact Us Button */}
-                <div className="about-btn-pair">
-                  <a href="#contact" className="about-btn-pill">
-                    Contact Us
+                {/* Feature 2: Quality Productions / Quality Service */}
+                <div className="about-modern-feature-block">
+                  <h3 className="about-modern-feature-title">Quality Assurance</h3>
+                  <div className="about-modern-feature-row">
+                    <div className="about-modern-icon-box">
+                      <ShieldCheck size={26} strokeWidth={2.2} />
+                    </div>
+                    <p className="about-modern-feature-desc">
+                      Every vehicle undergoes rigorous 24-point safety checks, sanitization, and 24/7 on-road roadside assistance.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Discover Work / Contact CTA Button in deep navy */}
+                <div className="about-modern-btn-wrap">
+                  <a href="#gallery" className="about-modern-cta-btn">
+                    DISCOVER FLEET
                   </a>
                 </div>
               </div>
