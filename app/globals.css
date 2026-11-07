@@ -1131,16 +1131,42 @@ a {
 }
 
 .service-card-standard .service-title-text {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #11141a;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
 }
 
 .service-card-standard .service-sub-text {
   font-size: 0.88rem;
-  line-height: 1.55;
+  line-height: 1.5;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.service-card-standard .service-perks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 18px;
 }
 
 .service-card-standard .service-perks-list li {
-  font-size: 0.86rem;
+  font-size: 0.85rem;
+  color: #334155;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.service-card-standard .service-perks-list .check-icon {
+  color: #16a34a;
+  background: #ecfdf5;
+  border-radius: 50%;
+  padding: 2px;
+  flex-shrink: 0;
 }
 
 .service-card-footer {

@@ -715,11 +715,11 @@ export default function Home() {
               <div className="service-card-premium service-card-highlighted">
                 <div className="service-card-media-framed">
                   <span className="service-floating-badge badge-popular">
-                    ★ #1 Most Recommended
+                    ★ Most Popular
                   </span>
                   <img
                     src="/images/gallery-1-keys.jpg"
-                    alt="Doorstep self-drive car delivery anywhere in Hyderabad"
+                    alt="Doorstep self-drive car delivery in Hyderabad"
                     className="service-card-img"
                     loading="lazy"
                     decoding="async"
@@ -728,23 +728,18 @@ export default function Home() {
                   />
                 </div>
                 <div className="service-card-content">
-                  <div className="service-tag-pill-highlight">
-                    <Truck size={15} />
-                    <span>Instant Doorstep Handover</span>
-                  </div>
                   <h3 className="service-title-text">Doorstep Car Delivery</h3>
                   <p className="service-sub-text">
-                    Experience unmatched convenience. We bring your sanitized, 40-point inspected car directly to your home, office, hotel, or RGIA Airport anywhere across Hyderabad within 60 minutes.
+                    Sanitized car delivered to your home, hotel, or RGIA airport within 60 minutes.
                   </p>
                   <ul className="service-perks-list">
-                    <li><Check size={15} className="check-icon" /> <strong>60-Minute Fast Delivery</strong> across all Hyderabad locations</li>
-                    <li><Check size={15} className="check-icon" /> <strong>Delivered to Doorstep, Hotel, or RGIA Airport</strong></li>
-                    <li><Check size={15} className="check-icon" /> <strong>100% Sanitized &amp; 40-Point Pre-Inspected</strong></li>
-                    <li><Check size={15} className="check-icon" /> <strong>Complimentary Return Pickup</strong> from your doorstep</li>
+                    <li><Check size={16} className="check-icon" /> Fast 60-minute delivery across Hyderabad</li>
+                    <li><Check size={16} className="check-icon" /> Direct drop to doorstep, hotel, or airport</li>
+                    <li><Check size={16} className="check-icon" /> Free return pickup from your doorstep</li>
                   </ul>
                   <div className="service-card-footer">
                     <span className="service-guarantee-pill">
-                      ⚡ Express 60-Min Drop
+                      ⚡ 60-Min Drop
                     </span>
                     <a
                       href="https://wa.me/917396662420?text=Hi%20Royal%20Cars%2C%20I%20would%20like%20to%20book%20a%20Doorstep%20Car%20Delivery%20in%20Hyderabad."
@@ -759,11 +754,11 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Service 2: Hub / Office Self-Pickup (Customer visits company & takes car) */}
+              {/* Service 2: Hub Self-Pickup (Customer visits company & takes car) */}
               <div className="service-card-premium service-card-standard">
                 <div className="service-card-media-framed">
                   <span className="service-floating-badge badge-hub">
-                    Self-Pickup • Zero Delivery Fee
+                    Zero Delivery Fee
                   </span>
                   <img
                     src="/images/about-driver.jpg"
@@ -776,23 +771,18 @@ export default function Home() {
                   />
                 </div>
                 <div className="service-card-content">
-                  <div className="service-tag-pill-standard">
-                    <MapPin size={15} />
-                    <span>Direct Hub Handover</span>
-                  </div>
-                  <h3 className="service-title-text">Hub &amp; Branch Self-Pickup</h3>
+                  <h3 className="service-title-text">Hub Self-Pickup</h3>
                   <p className="service-sub-text">
-                    Prefer visiting us directly? Walk into our central Hyderabad hub in person. Inspect your preferred car, test drive, complete instant 2-minute digital verification, and drive away immediately.
+                    Visit our central Hyderabad hub, inspect your vehicle, and drive away in minutes.
                   </p>
                   <ul className="service-perks-list">
-                    <li><Check size={15} className="check-icon" /> <strong>Visit Our Central Hyderabad Hub</strong> in person</li>
-                    <li><Check size={15} className="check-icon" /> <strong>Live Physical Vehicle Inspection</strong> &amp; test drive</li>
-                    <li><Check size={15} className="check-icon" /> <strong>Zero Delivery Fee</strong> — Drive away in 5 minutes</li>
-                    <li><Check size={15} className="check-icon" /> <strong>24/7 Flexible Drop-Off</strong> back to our hub</li>
+                    <li><Check size={16} className="check-icon" /> Direct vehicle inspection &amp; test drive</li>
+                    <li><Check size={16} className="check-icon" /> Instant digital KYC — drive away in 5 mins</li>
+                    <li><Check size={16} className="check-icon" /> Flexible 24/7 returns to our hub</li>
                   </ul>
                   <div className="service-card-footer">
                     <span className="service-guarantee-pill">
-                      📍 Madhapur / Hitec Hub
+                      📍 Madhapur Hub
                     </span>
                     <a
                       href="https://wa.me/917396662420?text=Hi%20Royal%20Cars%2C%20I%20would%20like%20to%20visit%20your%20Hyderabad%20hub%20to%20pick%20up%20a%20car."
