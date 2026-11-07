@@ -637,11 +637,11 @@ export default function Home() {
                 </div>
 
                 <h2 className="about-modern-heading">
-                  Hyderabad&apos;s most trusted &amp; premier car rental company.
+                  Hyderabad&apos;s trusted car rental company.
                 </h2>
 
                 <p className="about-modern-lead">
-                  We are dedicated to providing seamless self-drive and luxury car rentals across Hyderabad. From meticulously sanitized hatchbacks to flagship luxury sedans and premium SUVs, every vehicle is delivered sanitized with zero security deposit.
+                  Seamless self-drive and luxury car rentals across Hyderabad with zero security deposit and instant doorstep delivery.
                 </p>
 
                 {/* 2 Square Orange Feature Cards */}
@@ -653,10 +653,10 @@ export default function Home() {
                     </div>
                     <div className="about-modern-feature-body">
                       <h3 className="about-modern-feature-title">
-                        Instant Doorstep Delivery
+                        Doorstep Delivery
                       </h3>
                       <p className="about-modern-feature-desc">
-                        Get your car dropped off and picked up right at your doorstep, airport, or hotel anywhere across Hyderabad within 60 minutes.
+                        Instant drop-off &amp; pickup across Hyderabad within 60 minutes.
                       </p>
                     </div>
                   </div>
@@ -668,10 +668,10 @@ export default function Home() {
                     </div>
                     <div className="about-modern-feature-body">
                       <h3 className="about-modern-feature-title">
-                        Certified &amp; Inspected Fleet
+                        Inspected &amp; Certified
                       </h3>
                       <p className="about-modern-feature-desc">
-                        Every vehicle undergoes a 40-point safety check with comprehensive insurance coverage and 24/7 roadside assistance.
+                        Sanitized vehicles with comprehensive insurance and 24/7 RSA.
                       </p>
                     </div>
                   </div>
