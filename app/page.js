@@ -1343,17 +1343,6 @@ export default function Home() {
                   height={520}
                 />
               </div>
-              <div className="gallery-masonry-item gm-short">
-                <img
-                  src="/images/gallery-1-keys.jpg"
-                  alt="Royal Cars executive key handover in Hyderabad"
-                  className="gallery-masonry-img"
-                  loading="lazy"
-                  decoding="async"
-                  width={400}
-                  height={320}
-                />
-              </div>
             </div>
           </div>
         </section>
