@@ -55,7 +55,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/images/hero-fleet-4k.png",
+        url: "/images/og-image-v2.jpg?v=2",
         width: 1200,
         height: 630,
         alt: "Royal Cars & Luxury Cars Hyderabad - Premium Self-Drive & Luxury Fleet",
@@ -69,7 +69,7 @@ export const metadata = {
     title: "Royal Cars & Luxury Cars Hyderabad — Self-Drive & Luxury Car Hire",
     description:
       "Rent self-drive & luxury cars in Hyderabad with Royal Cars. Zero deposit, doorstep delivery in 60 mins, verified cars & 24/7 airport pickup at RGIA Shamshabad.",
-    images: ["/images/hero-fleet-4k.png"],
+    images: ["/images/og-image-v2.jpg?v=2"],
   },
   robots: {
     index: true,
