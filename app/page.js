@@ -505,18 +505,24 @@ export default function Home() {
             1. HERO SECTION — Split Layout Matching User Provided Image
             ======================================================== */}
         <section className="hero-custom-split-section" id="hero">
-          {/* Background Image provided by user */}
+          {/* Background Image: 4K Ultra High-Res Custom Render Matching User Style */}
           <div className="hero-custom-bg-wrap">
-            <img
-              src="/images/hero-user-car.png"
-              alt="Royal Cars Hyderabad - Daily, Weekly & Monthly Self Drive Rentals"
-              className="hero-custom-bg-img"
-              loading="eager"
-              fetchPriority="high"
-              decoding="async"
-              width={1920}
-              height={700}
-            />
+            <picture>
+              <source media="(max-width: 768px)" srcSet="/images/hero-user-car.png" />
+              <img
+                src="/images/hero-orange-split-4k.jpg"
+                alt="Royal Cars Hyderabad - Daily, Weekly & Monthly Self Drive Rentals"
+                className="hero-custom-bg-img"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                width={1920}
+                height={720}
+                onError={(e) => {
+                  e.target.src = "/images/hero-user-car.png";
+                }}
+              />
+            </picture>
           </div>
 
           <div className="container hero-custom-overlay-content">
