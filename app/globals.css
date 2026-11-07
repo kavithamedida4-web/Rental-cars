@@ -382,14 +382,15 @@ a {
   max-height: 860px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding-top: clamp(36px, 6vh, 60px);
-  padding-bottom: clamp(24px, 4vh, 40px);
+  justify-content: center;
+  padding-top: clamp(20px, 4vh, 40px);
+  padding-bottom: clamp(20px, 4vh, 40px);
 }
 
 .hero-custom-left-block {
   max-width: 580px;
   text-align: left;
+  margin: auto 0;
 }
 
 .hero-custom-tag {
