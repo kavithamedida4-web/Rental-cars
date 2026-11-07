@@ -572,15 +572,14 @@ export default function Home() {
             <picture className="hero-split-car-picture">
               <source media="(max-width: 768px)" srcSet="/images/hero-fleet-mobile-same.jpg" />
               <img
-                src="/images/hero-split-car.png"
-                alt="Royal Cars luxury rental car in Hyderabad — compact SUV for self-drive"
+                src="/images/hero-fleet-4k.png"
+                alt="Royal Cars luxury rental car fleet in Hyderabad — hatchbacks, sedans and SUVs"
                 className="hero-split-car-img"
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
-                width={700}
-                height={500}
-                onError={(e) => { e.target.src = "/images/hero-fleet-4k.png"; }}
+                width={1200}
+                height={700}
               />
             </picture>
           </div>

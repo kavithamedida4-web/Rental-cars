@@ -359,10 +359,10 @@ a {
   position: absolute;
   top: 0;
   right: 0;
-  width: 58%;
+  width: 56%;
   height: 100%;
-  background: linear-gradient(135deg, #ff6b1a 0%, #ff4800 60%, #e63c00 100%);
-  clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background: linear-gradient(160deg, #ff6b1a 0%, #ff4800 55%, #e63c00 100%);
+  clip-path: polygon(14% 0%, 100% 0%, 100% 100%, 0% 100%);
   z-index: 0;
 }
 
@@ -370,9 +370,9 @@ a {
 .hero-split-left {
   position: relative;
   z-index: 2;
-  flex: 0 0 52%;
-  max-width: 52%;
-  padding: clamp(60px, 8vh, 100px) clamp(24px, 5vw, 80px) clamp(40px, 6vh, 80px) clamp(24px, 6vw, 100px);
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: clamp(60px, 8vh, 100px) clamp(24px, 4vw, 60px) clamp(40px, 6vh, 80px) clamp(24px, 6vw, 100px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -474,7 +474,6 @@ a {
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.12);
   padding: 14px 18px;
-  gap: 0;
   width: 100%;
   max-width: 580px;
   flex-wrap: wrap;
@@ -530,30 +529,30 @@ a {
   background: #e63c00;
 }
 
-/* Right image column */
+/* Right image column — sits above orange diagonal bg */
 .hero-split-right {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   flex: 1;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start;
+  justify-content: center;
   padding-bottom: 0;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .hero-split-car-picture {
   display: contents;
 }
 
+/* Car image fills the orange right panel edge-to-edge at bottom */
 .hero-split-car-img {
-  width: 115%;
-  max-width: 820px;
-  height: auto;
-  object-fit: contain;
-  object-position: bottom center;
-  margin-left: -10%;
-  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.25));
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+  display: block;
 }
 
 /* ===================== MOBILE ===================== */
@@ -564,8 +563,9 @@ a {
   }
   .hero-split-orange-bg {
     width: 100%;
-    top: 48%;
-    clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+    top: 55%;
+    height: 45%;
+    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
   }
   .hero-split-left {
     flex: none;
@@ -586,13 +586,15 @@ a {
   .hero-booking-divider { display: none; }
   .hero-split-right {
     flex: none;
+    height: 280px;
     justify-content: center;
-    padding: 0 20px 20px;
   }
   .hero-split-car-img {
     width: 100%;
-    max-width: 420px;
-    margin-left: 0;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center bottom;
   }
 }
 
