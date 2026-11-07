@@ -339,6 +339,263 @@ a {
    - Centered orange "View All Cars" button
    - Front-facing 3-car lineup (Red in center, white on sides)
    ======================================================== */
+
+/* ========================================================
+   SPLIT HERO SECTION — White Left + Orange Diagonal Right
+   ======================================================== */
+.hero-split-section {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* Orange diagonal background — covers right 55% with a diagonal cut */
+.hero-split-orange-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 58%;
+  height: 100%;
+  background: linear-gradient(135deg, #ff6b1a 0%, #ff4800 60%, #e63c00 100%);
+  clip-path: polygon(12% 0%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 0;
+}
+
+/* Left content column */
+.hero-split-left {
+  position: relative;
+  z-index: 2;
+  flex: 0 0 52%;
+  max-width: 52%;
+  padding: clamp(60px, 8vh, 100px) clamp(24px, 5vw, 80px) clamp(40px, 6vh, 80px) clamp(24px, 6vw, 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.hero-split-tag {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #ff4800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.hero-split-heading {
+  font-size: clamp(2rem, 3.5vw, 3.2rem);
+  font-weight: 900;
+  line-height: 1.1;
+  color: #0f172a;
+  margin: 0 0 10px 0;
+  letter-spacing: -0.03em;
+}
+
+.hero-split-heading-accent {
+  color: #ff4800;
+}
+
+.hero-split-accent-bar {
+  width: 54px;
+  height: 4px;
+  background: #ff4800;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+.hero-split-subtext {
+  font-size: clamp(0.88rem, 1.1vw, 1rem);
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 28px;
+  max-width: 420px;
+}
+
+/* CTA Buttons */
+.hero-split-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.hero-split-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #ff4800;
+  color: #ffffff;
+  padding: 13px 28px;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 6px 20px rgba(255, 72, 0, 0.35);
+}
+.hero-split-btn-primary:hover {
+  background: #e63c00;
+  transform: translateY(-2px);
+}
+
+.hero-split-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #ffffff;
+  color: #0f172a;
+  padding: 13px 24px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border: 2px solid #e2e8f0;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.hero-split-btn-secondary:hover {
+  border-color: #ff4800;
+  box-shadow: 0 4px 14px rgba(255,72,0,0.12);
+  transform: translateY(-2px);
+}
+
+/* Booking Bar at bottom of left column */
+.hero-split-booking-bar {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  padding: 14px 18px;
+  gap: 0;
+  width: 100%;
+  max-width: 580px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hero-booking-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+  min-width: 120px;
+}
+
+.hero-booking-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.hero-booking-value {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.hero-booking-divider {
+  width: 1px;
+  height: 36px;
+  background: #e2e8f0;
+  margin: 0 10px;
+  flex-shrink: 0;
+}
+
+.hero-booking-search-btn {
+  background: #ff4800;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.88rem;
+  padding: 11px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+.hero-booking-search-btn:hover {
+  background: #e63c00;
+}
+
+/* Right image column */
+.hero-split-right {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-bottom: 0;
+  overflow: visible;
+}
+
+.hero-split-car-picture {
+  display: contents;
+}
+
+.hero-split-car-img {
+  width: 115%;
+  max-width: 820px;
+  height: auto;
+  object-fit: contain;
+  object-position: bottom center;
+  margin-left: -10%;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.25));
+}
+
+/* ===================== MOBILE ===================== */
+@media (max-width: 900px) {
+  .hero-split-section {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .hero-split-orange-bg {
+    width: 100%;
+    top: 48%;
+    clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .hero-split-left {
+    flex: none;
+    max-width: 100%;
+    padding: 48px 20px 24px 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-split-heading { font-size: 2rem; }
+  .hero-split-subtext { max-width: 100%; }
+  .hero-split-accent-bar { margin: 0 auto 16px auto; }
+  .hero-split-btn-group { justify-content: center; }
+  .hero-split-booking-bar {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 100%;
+  }
+  .hero-booking-divider { display: none; }
+  .hero-split-right {
+    flex: none;
+    justify-content: center;
+    padding: 0 20px 20px;
+  }
+  .hero-split-car-img {
+    width: 100%;
+    max-width: 420px;
+    margin-left: 0;
+  }
+}
+
 .hero-rentq-section {
   position: relative;
   width: 100%;

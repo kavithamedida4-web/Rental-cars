@@ -502,43 +502,27 @@ export default function Home() {
 
       <main>
         {/* ========================================================
-            1. HERO SECTION (RentQ Style)
-            - Main big heading restricted strictly to 600px width
-            - Peach floating booking bar with 4 input cards
-            - Centered orange "View All Cars" button
-            - Symmetrical front-facing 3-car showcase (Red in center, white on sides)
+            1. HERO SECTION (Split Layout — White Left + Orange Diagonal Right)
             ======================================================== */}
-        <section className="hero-rentq-section" id="hero">
-          {/* Responsive Hero Background Image */}
-          <picture className="hero-rentq-bg-wrap">
-            <source media="(max-width: 768px)" srcSet="/images/hero-fleet-mobile-same.jpg" />
-            <img
-              src="/images/hero-fleet-4k.png"
-              alt="RENC lineup of modern rental cars in Hyderabad: hatchbacks, sedans, compact SUVs and luxury cars"
-              className="hero-rentq-bg-image"
-              loading="eager"
-              fetchPriority="high"
-              decoding="async"
-              width={1920}
-              height={1080}
-            />
-          </picture>
+        <section className="hero-split-section" id="hero">
+          {/* Orange diagonal background shape */}
+          <div className="hero-split-orange-bg" aria-hidden="true" />
 
-          {/* Overlay Content Sitting Directly on the Background Image */}
-          <div className="container hero-rentq-overlay-content">
-            {/* MANDATORY USER REQUIREMENT: Main big heading only 600px width */}
-            <h1 className="rentq-main-heading" id="hero-main-heading">
-              Daily, Weekly &amp;<br className="heading-mobile-break" /> Monthly Car Rentals<br className="heading-mobile-break" /> in Hyderabad
+          {/* Left Column: Text Content */}
+          <div className="hero-split-left">
+            <p className="hero-split-tag">Best Car</p>
+            <h1 className="hero-split-heading">
+              Daily, Weekly &amp;<br />Monthly Car Rentals<br />
+              <span className="hero-split-heading-accent">in Hyderabad</span>
             </h1>
-            <div className="heading-accent-line"></div>
-
-            <p className="hero-rentq-subtext">
+            <div className="hero-split-accent-bar" />
+            <p className="hero-split-subtext">
               Self-drive &amp; luxury cars with instant doorstep delivery across Hyderabad.
             </p>
 
-            {/* Call To Action 2 Buttons in Hero Section */}
-            <div className="hero-cta-btn-group">
-              <a href="#gallery" className="hero-cta-btn-primary">
+            {/* CTA Buttons */}
+            <div className="hero-split-btn-group">
+              <a href="#gallery" className="hero-split-btn-primary">
                 <span>Explore Fleet</span>
                 <ArrowUpRight size={16} />
               </a>
@@ -546,7 +530,7 @@ export default function Home() {
                 href="https://wa.me/917396662420?text=Hello%20Royal%20Cars%2C%20I%20want%20to%20rent%20a%20car"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hero-cta-btn-secondary"
+                className="hero-split-btn-secondary"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="#25d366" style={{ flexShrink: 0 }}>
                   <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2ZM12.04 20.15C10.56 20.15 9.11 19.76 7.85 19.01L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.8 7.37 7.5 3.67 12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15ZM16.57 14.39C16.32 14.27 15.1 13.67 14.87 13.58C14.64 13.5 14.48 13.45 14.31 13.7C14.15 13.95 13.67 14.52 13.53 14.68C13.38 14.85 13.24 14.87 12.99 14.75C12.74 14.62 11.94 14.36 10.99 13.52C10.25 12.86 9.75 12.05 9.61 11.8C9.46 11.55 9.59 11.42 9.72 11.3C9.83 11.19 9.97 11.01 10.09 10.87C10.22 10.73 10.26 10.62 10.34 10.46C10.42 10.29 10.38 10.15 10.32 10.03C10.26 9.9 9.76 8.68 9.56 8.17C9.36 7.67 9.16 7.74 9.01 7.73C8.87 7.72 8.71 7.72 8.54 7.72C8.38 7.72 8.11 7.78 7.89 8.03C7.66 8.27 7.02 8.87 7.02 10.1C7.02 11.33 7.91 12.51 8.04 12.68C8.16 12.84 9.79 15.36 12.28 16.43C12.87 16.69 13.33 16.84 13.69 16.96C14.29 17.15 14.83 17.12 15.26 17.06C15.74 16.99 16.74 16.45 16.95 15.87C17.16 15.29 17.16 14.79 17.09 14.68C17.03 14.57 16.82 14.51 16.57 14.39Z" />
@@ -555,7 +539,50 @@ export default function Home() {
               </a>
             </div>
 
+            {/* Bottom Booking Bar */}
+            <div className="hero-split-booking-bar">
+              <div className="hero-booking-item">
+                <span className="hero-booking-label">
+                  <Car size={15} /> Select Your Car
+                </span>
+                <span className="hero-booking-value">Car Matic / Manual</span>
+              </div>
+              <div className="hero-booking-divider" />
+              <div className="hero-booking-item">
+                <span className="hero-booking-label">
+                  <MapPin size={15} /> Where to Pick-Up
+                </span>
+                <span className="hero-booking-value">Hyderabad, Telangana</span>
+              </div>
+              <div className="hero-booking-divider" />
+              <div className="hero-booking-item">
+                <span className="hero-booking-label">
+                  <Calendar size={15} /> Duration
+                </span>
+                <span className="hero-booking-value">Daily / Weekly / Monthly</span>
+              </div>
+              <a href="#gallery" className="hero-booking-search-btn">
+                Search Now
+              </a>
+            </div>
+          </div>
 
+          {/* Right Column: Car Image over orange diagonal */}
+          <div className="hero-split-right">
+            <picture className="hero-split-car-picture">
+              <source media="(max-width: 768px)" srcSet="/images/hero-fleet-mobile-same.jpg" />
+              <img
+                src="/images/hero-split-car.png"
+                alt="Royal Cars luxury rental car in Hyderabad — compact SUV for self-drive"
+                className="hero-split-car-img"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                width={700}
+                height={500}
+                onError={(e) => { e.target.src = "/images/hero-fleet-4k.png"; }}
+              />
+            </picture>
           </div>
         </section>
 
