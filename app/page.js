@@ -569,19 +569,16 @@ export default function Home() {
 
           {/* Right Column: Car Image over orange diagonal */}
           <div className="hero-split-right">
-            <picture className="hero-split-car-picture">
-              <source media="(max-width: 768px)" srcSet="/images/hero-fleet-mobile-same.jpg" />
-              <img
-                src="/images/hero-fleet-4k.png"
-                alt="Royal Cars luxury rental car fleet in Hyderabad — hatchbacks, sedans and SUVs"
-                className="hero-split-car-img"
-                loading="eager"
-                fetchPriority="high"
-                decoding="async"
-                width={1200}
-                height={700}
-              />
-            </picture>
+            <img
+              src="/images/hero-split-car.png"
+              alt="Royal Cars luxury rental car in Hyderabad — compact SUV for self-drive"
+              className="hero-split-car-img"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+              width={700}
+              height={500}
+            />
           </div>
         </section>
 
