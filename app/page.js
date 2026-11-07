@@ -534,9 +534,6 @@ export default function Home() {
                 <span className="hero-custom-heading-accent">in Hyderabad</span>
               </h1>
               <div className="hero-custom-accent-line" />
-              <p className="hero-custom-subtext">
-                Self-drive &amp; luxury cars with instant doorstep delivery across Hyderabad. Top demanding cars on flexible rental plans.
-              </p>
 
               {/* Action Buttons */}
               <div className="hero-custom-btn-group">
