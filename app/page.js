@@ -557,33 +557,6 @@ export default function Home() {
                 </a>
               </div>
             </div>
-
-            {/* Bottom floating booking bar matching reference layout */}
-            <div className="hero-custom-booking-bar">
-              <div className="hero-custom-booking-item">
-                <span className="hero-custom-booking-lbl">
-                  <Car size={15} /> Select Your Car
-                </span>
-                <span className="hero-custom-booking-val">Car Matic / Manual</span>
-              </div>
-              <div className="hero-custom-booking-sep" />
-              <div className="hero-custom-booking-item">
-                <span className="hero-custom-booking-lbl">
-                  <MapPin size={15} /> Where to Pick-Up
-                </span>
-                <span className="hero-custom-booking-val">Hyderabad, Telangana</span>
-              </div>
-              <div className="hero-custom-booking-sep" />
-              <div className="hero-custom-booking-item">
-                <span className="hero-custom-booking-lbl">
-                  <Calendar size={15} /> Date of Pick-Up
-                </span>
-                <span className="hero-custom-booking-val">Daily / Weekly / Monthly</span>
-              </div>
-              <a href="#gallery" className="hero-custom-booking-btn">
-                Search Now
-              </a>
-            </div>
           </div>
         </section>
 
