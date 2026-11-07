@@ -948,8 +948,212 @@ a {
 }
 
 /* ========================================================
-   SERVICES SECTION (Second in sequence) - Premium Redesign
+   SERVICES SECTION (Two Delivery Models: Doorstep vs Hub)
    ======================================================== */
+.services-header-center {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 36px auto;
+}
+
+.services-header-center .section-tag {
+  display: inline-flex;
+  margin-bottom: 12px;
+}
+
+.services-header-center .section-title {
+  margin-bottom: 12px;
+}
+
+.services-subtext-centered {
+  font-size: clamp(0.92rem, 1.1vw, 1.02rem);
+  color: #64748b;
+  line-height: 1.55;
+  margin: 0 auto;
+}
+
+.services-duo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+@media (max-width: 860px) {
+  .services-duo-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 520px;
+  }
+}
+
+.services-duo-grid .service-card-premium {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: none;
+  width: 100%;
+}
+
+.services-duo-grid .service-card-media-framed {
+  height: 230px;
+  margin: 16px 16px 0 16px;
+  border-radius: 16px;
+}
+
+@media (max-width: 480px) {
+  .services-duo-grid .service-card-media-framed {
+    height: 180px;
+    margin: 12px 12px 0 12px;
+  }
+}
+
+/* Service Pill Tags inside content */
+.service-tag-pill-highlight {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+  padding: 5px 13px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: #ffffff;
+  font-size: 0.76rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.service-tag-pill-standard {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+  padding: 5px 13px;
+  border-radius: 50px;
+  background: #fff5ee;
+  border: 1px solid #ffdcd0;
+  color: #ff4800;
+  font-size: 0.76rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* HIGHLIGHTED CARD: Doorstep Car Delivery */
+.service-card-highlighted {
+  background: linear-gradient(150deg, #ff4800 0%, #e63e00 100%) !important;
+  border: 2px solid #ff4800 !important;
+  box-shadow: 0 18px 45px rgba(255, 72, 0, 0.36) !important;
+  transform: translateY(-4px);
+}
+
+.service-card-highlighted:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 26px 56px rgba(255, 72, 0, 0.48) !important;
+}
+
+.service-card-highlighted .service-card-media-framed {
+  background: #ffffff;
+  border-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+}
+
+.service-card-highlighted .service-floating-badge {
+  background: #ffffff !important;
+  color: #ff4800 !important;
+  font-weight: 800;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+}
+
+.service-card-highlighted .service-title-text {
+  color: #ffffff !important;
+  font-size: 1.35rem;
+}
+
+.service-card-highlighted .service-sub-text {
+  color: rgba(255, 255, 255, 0.94) !important;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.service-card-highlighted .service-perks-list li {
+  color: #ffffff !important;
+  font-size: 0.86rem;
+}
+
+.service-card-highlighted .service-perks-list .check-icon {
+  color: #ff4800 !important;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.service-card-highlighted .service-card-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+.service-card-highlighted .service-guarantee-pill {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.45) !important;
+  color: #ffffff !important;
+}
+
+.service-card-highlighted .service-book-btn {
+  background: #ffffff !important;
+  color: #ff4800 !important;
+  font-weight: 800;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.service-card-highlighted .service-book-btn:hover {
+  background: #11141a !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+/* STANDARD CARD: Hub / Office Pickup */
+.service-card-standard {
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+}
+
+.service-card-standard:hover {
+  border-color: #ff4800;
+  box-shadow: 0 16px 36px rgba(255, 72, 0, 0.18);
+  transform: translateY(-6px);
+}
+
+.badge-hub {
+  background: #11141a;
+  color: #ffffff;
+}
+
+.service-card-standard .service-title-text {
+  font-size: 1.35rem;
+}
+
+.service-card-standard .service-sub-text {
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.service-card-standard .service-perks-list li {
+  font-size: 0.86rem;
+}
+
+.service-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 16px;
+  margin-top: auto;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .services-header-flex {
   display: flex;
   align-items: flex-end;

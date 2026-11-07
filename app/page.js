@@ -690,142 +690,122 @@ export default function Home() {
 
         {/* ========================================================
             3. SERVICES SECTION (Third in sequence)
+            - 2 Services Only:
+              1) Doorstep Car Delivery (HIGHLIGHTED)
+              2) Customer Hub / Office Self-Pickup
             ======================================================== */}
         <section className="section-padding bg-warm" id="services">
           <div className="container">
-            <div className="services-header-flex">
-              <div>
-                <div className="section-tag">
-                  <span className="dot"></span>
-                  <span>Our Services</span>
-                </div>
-                <h2 className="section-title">
-                  Explore our wide range of rental services
-                </h2>
+            <div className="services-header-center">
+              <div className="section-tag">
+                <span className="dot"></span>
+                <span>Our Rental Services</span>
               </div>
+              <h2 className="section-title">
+                Two Flexible Ways To Get Your Car In Hyderabad
+              </h2>
+              <p className="services-subtext-centered">
+                Choose between instant doorstep delivery directly to your home or hotel, or visit our central company hub to inspect and drive away directly.
+              </p>
             </div>
 
-            {/* Services Carousel with Left & Right Side Arrow Navigation */}
-            <div className="services-carousel-outer">
-              <button
-                type="button"
-                className="services-nav-btn services-nav-prev"
-                onClick={() => scrollServices("left")}
-                aria-label="Previous service"
-              >
-                <ChevronLeft size={22} />
-              </button>
-
-              <div className="services-scroll-track" ref={servicesTrackRef}>
-              {/* Card 1: Car Rental With Driver */}
-              <div className="service-card-premium">
+            {/* Two Services Comparison Grid */}
+            <div className="services-duo-grid">
+              {/* Service 1: Doorstep Car Delivery (HIGHLIGHTED) */}
+              <div className="service-card-premium service-card-highlighted">
                 <div className="service-card-media-framed">
+                  <span className="service-floating-badge badge-popular">
+                    ★ #1 Most Recommended
+                  </span>
+                  <img
+                    src="/images/gallery-1-keys.jpg"
+                    alt="Doorstep self-drive car delivery anywhere in Hyderabad"
+                    className="service-card-img"
+                    loading="lazy"
+                    decoding="async"
+                    width={450}
+                    height={260}
+                  />
+                </div>
+                <div className="service-card-content">
+                  <div className="service-tag-pill-highlight">
+                    <Truck size={15} />
+                    <span>Instant Doorstep Handover</span>
+                  </div>
+                  <h3 className="service-title-text">Doorstep Car Delivery</h3>
+                  <p className="service-sub-text">
+                    Experience unmatched convenience. We bring your sanitized, 40-point inspected car directly to your home, office, hotel, or RGIA Airport anywhere across Hyderabad within 60 minutes.
+                  </p>
+                  <ul className="service-perks-list">
+                    <li><Check size={15} className="check-icon" /> <strong>60-Minute Fast Delivery</strong> across all Hyderabad locations</li>
+                    <li><Check size={15} className="check-icon" /> <strong>Delivered to Doorstep, Hotel, or RGIA Airport</strong></li>
+                    <li><Check size={15} className="check-icon" /> <strong>100% Sanitized &amp; 40-Point Pre-Inspected</strong></li>
+                    <li><Check size={15} className="check-icon" /> <strong>Complimentary Return Pickup</strong> from your doorstep</li>
+                  </ul>
+                  <div className="service-card-footer">
+                    <span className="service-guarantee-pill">
+                      ⚡ Express 60-Min Drop
+                    </span>
+                    <a
+                      href="https://wa.me/917396662420?text=Hi%20Royal%20Cars%2C%20I%20would%20like%20to%20book%20a%20Doorstep%20Car%20Delivery%20in%20Hyderabad."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="service-book-btn"
+                    >
+                      <span>Book Doorstep Delivery</span>
+                      <ArrowUpRight size={16} />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* Service 2: Hub / Office Self-Pickup (Customer visits company & takes car) */}
+              <div className="service-card-premium service-card-standard">
+                <div className="service-card-media-framed">
+                  <span className="service-floating-badge badge-hub">
+                    Self-Pickup • Zero Delivery Fee
+                  </span>
                   <img
                     src="/images/about-driver.jpg"
-                    alt="Car rental with professional chauffeur in Hyderabad"
+                    alt="Customer visiting Royal Cars Hyderabad hub for car pickup"
                     className="service-card-img"
                     loading="lazy"
                     decoding="async"
-                    width={400}
+                    width={450}
                     height={260}
                   />
                 </div>
                 <div className="service-card-content">
-                  <h3 className="service-title-text">Car Rental With Driver</h3>
+                  <div className="service-tag-pill-standard">
+                    <MapPin size={15} />
+                    <span>Direct Hub Handover</span>
+                  </div>
+                  <h3 className="service-title-text">Hub &amp; Branch Self-Pickup</h3>
                   <p className="service-sub-text">
-                    Uniformed English &amp; Telugu chauffeurs for city commutes and outstation tours.
+                    Prefer visiting us directly? Walk into our central Hyderabad hub in person. Inspect your preferred car, test drive, complete instant 2-minute digital verification, and drive away immediately.
                   </p>
                   <ul className="service-perks-list">
-                    <li><Check size={14} className="check-icon" /> Verified &amp; Trained Chauffeurs</li>
-                    <li><Check size={14} className="check-icon" /> Fuel &amp; Toll Inclusive Packages</li>
+                    <li><Check size={15} className="check-icon" /> <strong>Visit Our Central Hyderabad Hub</strong> in person</li>
+                    <li><Check size={15} className="check-icon" /> <strong>Live Physical Vehicle Inspection</strong> &amp; test drive</li>
+                    <li><Check size={15} className="check-icon" /> <strong>Zero Delivery Fee</strong> — Drive away in 5 minutes</li>
+                    <li><Check size={15} className="check-icon" /> <strong>24/7 Flexible Drop-Off</strong> back to our hub</li>
                   </ul>
+                  <div className="service-card-footer">
+                    <span className="service-guarantee-pill">
+                      📍 Madhapur / Hitec Hub
+                    </span>
+                    <a
+                      href="https://wa.me/917396662420?text=Hi%20Royal%20Cars%2C%20I%20would%20like%20to%20visit%20your%20Hyderabad%20hub%20to%20pick%20up%20a%20car."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="service-book-btn"
+                    >
+                      <span>Book Hub Pickup</span>
+                      <ArrowUpRight size={16} />
+                    </a>
+                  </div>
                 </div>
               </div>
-
-              {/* Card 2: Business Car Rental */}
-              <div className="service-card-premium">
-                <div className="service-card-media-framed">
-                  <img
-                    src="/images/fleet-bentley.jpg"
-                    alt="Corporate luxury car rental for business executives in Hyderabad"
-                    className="service-card-img"
-                    loading="lazy"
-                    decoding="async"
-                    width={400}
-                    height={260}
-                  />
-                </div>
-                <div className="service-card-content">
-                  <h3 className="service-title-text">Business Car Rental</h3>
-                  <p className="service-sub-text">
-                    Executive luxury sedans tailored for corporate delegates, summits, and client meetings.
-                  </p>
-                  <ul className="service-perks-list">
-                    <li><Check size={14} className="check-icon" /> GST Invoicing &amp; Corporate Billing</li>
-                    <li><Check size={14} className="check-icon" /> Dedicated 24/7 Account Manager</li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* Card 3: Airport Transfer (RGIA) */}
-              <div className="service-card-premium">
-                <div className="service-card-media-framed">
-                  <img
-                    src="/images/fleet-suv.jpg"
-                    alt="Airport transfer car rental at Rajiv Gandhi International Airport RGIA Shamshabad"
-                    className="service-card-img"
-                    loading="lazy"
-                    decoding="async"
-                    width={400}
-                    height={260}
-                  />
-                </div>
-                <div className="service-card-content">
-                  <h3 className="service-title-text">Airport Transfer</h3>
-                  <p className="service-sub-text">
-                    Guaranteed on-time pickup and drop-off directly at Rajiv Gandhi International Airport.
-                  </p>
-                  <ul className="service-perks-list">
-                    <li><Check size={14} className="check-icon" /> Real-Time Flight Delay Tracking</li>
-                    <li><Check size={14} className="check-icon" /> 60 Mins Complimentary Waiting</li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* Card 4: Self-Drive Rentals */}
-              <div className="service-card-premium">
-                <div className="service-card-media-framed">
-                  <img
-                    src="/images/fleet-mini.jpg"
-                    alt="Affordable self drive car rental with zero security deposit in Hyderabad"
-                    className="service-card-img"
-                    loading="lazy"
-                    decoding="async"
-                    width={400}
-                    height={260}
-                  />
-                </div>
-                <div className="service-card-content">
-                  <h3 className="service-title-text">Self-Drive Rentals</h3>
-                  <p className="service-sub-text">
-                    Complete freedom with verified manual and automatic transmission cars.
-                  </p>
-                  <ul className="service-perks-list">
-                    <li><Check size={14} className="check-icon" /> Zero Security Deposit Required</li>
-                    <li><Check size={14} className="check-icon" /> Doorstep Delivery &amp; 24/7 RSA</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <button
-                type="button"
-                className="services-nav-btn services-nav-next"
-                onClick={() => scrollServices("right")}
-                aria-label="Next service"
-              >
-                <ChevronRight size={22} />
-              </button>
             </div>
           </div>
         </section>
