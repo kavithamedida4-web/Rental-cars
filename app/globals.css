@@ -1347,7 +1347,8 @@ a {
   background: #ffffff;
   position: relative;
   overflow: hidden;
-  padding: clamp(60px, 8vh, 100px) 0;
+  padding: clamp(80px, 12vh, 140px) 0 clamp(60px, 8vh, 100px) 0;
+  margin-top: clamp(20px, 4vh, 50px);
 }
 
 .about-modern-layout {
