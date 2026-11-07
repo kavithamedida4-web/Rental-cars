@@ -584,94 +584,103 @@ export default function Home() {
         </section>
 
         {/* ========================================================
-            2. ABOUT US SECTION (Second in sequence)
+            2. ABOUT US SECTION (Design Ref: Large Primary Photo + Inset Secondary + Badge + Features)
             ======================================================== */}
-        <section className="section-padding bg-white" id="about">
+        <section className="section-padding about-modern-section" id="about">
           <div className="container">
-            <div className="about-split-layout">
-              {/* Left Column: Twin Overlapping Circular Photos of Indian Service Men in Orange T-Shirts */}
-              <div className="about-circles-cluster">
-                {/* Back / Top-Left Capsule Arch: Indian serviceman in orange polo t-shirt sitting in car with open door */}
-                <div className="about-circle-main">
+            <div className="about-modern-layout">
+              {/* Left Column: Asymmetric Framing Photo Cluster */}
+              <div className="about-modern-visual-col">
+                {/* Vertical Ghost Typography */}
+                <div className="about-modern-vertical-word" aria-hidden="true">
+                  ROYAL
+                </div>
+
+                {/* Primary Large Rectangular Photo (Driver Handover) */}
+                <div className="about-modern-photo-main">
                   <img
                     src="/images/about-service-arch.jpg"
-                    alt="Indian car rental service professional in orange polo t-shirt sitting in luxury car with open door"
-                    className="about-circle-img"
+                    alt="Royal Cars Hyderabad premium fleet handover service"
+                    className="about-modern-img"
                     loading="lazy"
                     decoding="async"
-                    width={320}
-                    height={320}
+                    width={520}
+                    height={460}
                   />
                 </div>
 
-                {/* Front / Bottom-Right Overlapping Circle: Indian serviceman in orange t-shirt handing car keys */}
-                <div className="about-circle-overlap">
+                {/* Overlapping Secondary Inset Photo (Detailing & Quality Inspection) */}
+                <div className="about-modern-photo-inset">
                   <img
-                    src="/images/about-service-2.jpg"
-                    alt="Indian car rental executive in orange polo t-shirt handing over car keys to customer"
-                    className="about-circle-img"
+                    src="/images/gallery-3-inspection.jpg"
+                    alt="Royal Cars comprehensive vehicle inspection and quality preparation"
+                    className="about-modern-img"
                     loading="lazy"
                     decoding="async"
                     width={320}
-                    height={320}
+                    height={260}
                   />
+                </div>
+
+                {/* Deep Navy Floating Badge with Accent Stripe */}
+                <div className="about-modern-badge">
+                  <span className="about-modern-badge-stripe" />
+                  <span className="about-modern-badge-text">#1 Rated Car Rentals in Hyderabad</span>
                 </div>
               </div>
 
-              {/* Right Column: Content matching reference design */}
-              <div className="about-content-col">
-                <div className="about-tag-badge">
-                  <span className="about-tag-square"></span>
-                  <span>About Us</span>
+              {/* Right Column: Content matching the reference layout & hierarchy */}
+              <div className="about-modern-content-col">
+                <div className="about-modern-tagline">
+                  <span className="about-modern-tag-line" />
+                  <span>About Company</span>
                 </div>
 
-                <h2 className="about-main-heading">
-                  Your trusted partner in reliable car rental
+                <h2 className="about-modern-heading">
+                  Hyderabad&apos;s most trusted &amp; premier car rental company.
                 </h2>
 
-                <p className="about-lead-desc">
-                  We are committed to delivering seamless self-drive freedom across Hyderabad. From pristine compact hatchbacks to executive luxury sedans and flagship SUVs, our fleet is fully serviced, sanitized, and ready for your next adventure.
+                <p className="about-modern-lead">
+                  We are dedicated to providing seamless self-drive and luxury car rentals across Hyderabad. From meticulously sanitized hatchbacks to flagship luxury sedans and premium SUVs, every vehicle is delivered sanitized with zero security deposit.
                 </p>
 
-                <div className="about-features-card-list">
-                  {/* Feature 1: Easy Booking Process */}
-                  <div className="about-feature-item">
-                    <div className="about-feature-icon-circle">
-                      <Smartphone size={22} />
+                {/* 2 Square Orange Feature Cards */}
+                <div className="about-modern-features-list">
+                  {/* Feature 1: Doorstep Delivery */}
+                  <div className="about-modern-feature-card">
+                    <div className="about-modern-feature-icon-box">
+                      <Truck size={24} strokeWidth={2.2} />
                     </div>
-                    <div>
-                      <h3 className="about-feature-title">
-                        Easy Booking Process
+                    <div className="about-modern-feature-body">
+                      <h3 className="about-modern-feature-title">
+                        Instant Doorstep Delivery
                       </h3>
-                      <p className="about-feature-text">
-                        We Have Optimized The Booking Process So That Our Clients Can Experience The Easiest And The Safest Service.
+                      <p className="about-modern-feature-desc">
+                        Get your car dropped off and picked up right at your doorstep, airport, or hotel anywhere across Hyderabad within 60 minutes.
                       </p>
                     </div>
                   </div>
 
-                  {/* Feature Divider */}
-                  <div className="about-feature-divider" />
-
-                  {/* Feature 2: Convenient Pick-Up & Return Process */}
-                  <div className="about-feature-item">
-                    <div className="about-feature-icon-circle">
-                      <KeyRound size={22} />
+                  {/* Feature 2: Quality Certified & Maintained */}
+                  <div className="about-modern-feature-card">
+                    <div className="about-modern-feature-icon-box">
+                      <CheckCircle2 size={24} strokeWidth={2.2} />
                     </div>
-                    <div>
-                      <h3 className="about-feature-title">
-                        Convenient Pick-Up &amp; Return Process
+                    <div className="about-modern-feature-body">
+                      <h3 className="about-modern-feature-title">
+                        Certified &amp; Inspected Fleet
                       </h3>
-                      <p className="about-feature-text">
-                        We Have Optimized The Booking Process So That Our Clients Can Experience The Easiest And The Safest Service.
+                      <p className="about-modern-feature-desc">
+                        Every vehicle undergoes a 40-point safety check with comprehensive insurance coverage and 24/7 roadside assistance.
                       </p>
                     </div>
                   </div>
                 </div>
 
-                {/* Contact Us Button */}
-                <div className="about-btn-pair">
-                  <a href="#contact" className="about-btn-pill">
-                    Contact Us
+                {/* Discover Fleet Button (Navy matching reference styling) */}
+                <div className="about-modern-action-wrap">
+                  <a href="#gallery" className="about-modern-btn">
+                    DISCOVER FLEET
                   </a>
                 </div>
               </div>
