@@ -1350,7 +1350,9 @@ a {
   background: #ffffff;
   position: relative;
   overflow: hidden;
-  padding: clamp(70px, 10vh, 110px) 0;
+  min-height: calc(100vh - 70px);
+  min-height: calc(100dvh - 70px);
+  padding: clamp(60px, 8vh, 90px) 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1358,27 +1360,28 @@ a {
 }
 
 .about-modern-section .container {
-  max-width: 1180px;
+  max-width: 1260px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 32px;
 }
 
 .about-modern-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(48px, 6vw, 80px);
+  grid-template-columns: 1.05fr 1fr;
+  gap: clamp(50px, 6vw, 90px);
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  max-width: 1120px;
+  max-width: 1220px;
 }
 
 /* Visual Column with layered overlapping geometry */
 .about-modern-visual-col {
   position: relative;
   width: 100%;
-  max-width: 490px;
-  height: 460px;
+  max-width: 560px;
+  height: 520px;
   margin: 0 auto;
 }
 
@@ -1386,9 +1389,9 @@ a {
 .about-modern-vertical-word {
   position: absolute;
   top: 50%;
-  left: -28px;
+  left: -32px;
   transform: translateY(-50%) rotate(-90deg);
-  font-size: 3.2rem;
+  font-size: 3.8rem;
   font-weight: 900;
   letter-spacing: 0.35em;
   color: rgba(226, 232, 240, 0.45);
@@ -1401,12 +1404,12 @@ a {
 .about-modern-photo-main {
   position: absolute;
   top: 0;
-  left: 30px;
-  width: 360px;
-  height: 360px;
-  border-radius: 4px;
+  left: 36px;
+  width: 420px;
+  height: 420px;
+  border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.12);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.14);
   z-index: 2;
   background: #f8fafc;
 }
@@ -1416,12 +1419,12 @@ a {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 240px;
-  height: 240px;
-  border-radius: 4px;
+  width: 280px;
+  height: 280px;
+  border-radius: 6px;
   overflow: hidden;
-  border: 8px solid #ffffff;
-  box-shadow: 0 20px 48px rgba(15, 23, 42, 0.18);
+  border: 10px solid #ffffff;
+  box-shadow: 0 24px 56px rgba(15, 23, 42, 0.22);
   z-index: 4;
   background: #ffffff;
 }
@@ -1443,18 +1446,18 @@ a {
 /* Deep Navy Floating Badge with Accent Line (Bottom Left) */
 .about-modern-badge {
   position: absolute;
-  bottom: 25px;
+  bottom: 30px;
   left: 10px;
   background: #0f1d36;
   color: #ffffff;
-  padding: 16px 22px 16px 16px;
-  border-radius: 2px;
+  padding: 18px 26px 18px 20px;
+  border-radius: 4px;
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   z-index: 5;
-  box-shadow: 0 14px 30px rgba(15, 29, 54, 0.28);
-  max-width: 220px;
+  box-shadow: 0 16px 36px rgba(15, 29, 54, 0.32);
+  max-width: 250px;
 }
 
 .about-modern-badge-stripe {
