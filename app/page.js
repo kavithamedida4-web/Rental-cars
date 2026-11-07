@@ -699,13 +699,13 @@ export default function Home() {
             <div className="services-header-center">
               <div className="section-tag">
                 <span className="dot"></span>
-                <span>Our Rental Services</span>
+                <span>Our Services</span>
               </div>
               <h2 className="section-title">
-                Two Flexible Ways To Get Your Car In Hyderabad
+                Ways To Get Your Car
               </h2>
               <p className="services-subtext-centered">
-                Choose between instant doorstep delivery directly to your home or hotel, or visit our central company hub to inspect and drive away directly.
+                Choose doorstep delivery or direct hub pickup.
               </p>
             </div>
 
