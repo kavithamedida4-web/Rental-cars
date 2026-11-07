@@ -434,46 +434,25 @@ export default function Home() {
             <button
               className="icon-btn-pill mobile-toggle-btn"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label="Toggle navigation menu"
+              aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
             >
-              <Menu size={18} />
+              {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
           </div>
         </div>
 
         {/* Mobile dropdown menu */}
         {mobileMenuOpen && (
-          <div style={{
-            background: "#ff4800",
-            padding: "16px 24px",
-            borderTop: "1px solid rgba(255, 255, 255, 0.2)",
-            display: "flex",
-            flexDirection: "column",
-            gap: "14px"
-          }}>
-            <a href="#hero" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Home</a>
-            <a href="#about" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>About</a>
-            <a href="#services" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Services</a>
-            <a href="#fleet" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Fleet</a>
-            <a href="#gallery" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Gallery</a>
+          <div className="nav-mobile-dropdown">
+            <a href="#hero" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>Home</a>
+            <a href="#about" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>About</a>
+            <a href="#services" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>Services</a>
+            <a href="#fleet" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>Fleet</a>
+            <a href="#gallery" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>Gallery</a>
             <a
               href="#contact"
               onClick={() => setMobileMenuOpen(false)}
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: "8px",
-                background: "#000000",
-                color: "#ffffff",
-                padding: "10px 22px",
-                borderRadius: "50px",
-                fontWeight: 800,
-                fontSize: "0.92rem",
-                marginTop: "6px",
-                width: "fit-content",
-                boxShadow: "0 4px 12px rgba(0,0,0,0.25)"
-              }}
+              className="nav-mobile-book-btn"
             >
               <span>Book Now</span>
             </a>

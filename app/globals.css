@@ -173,10 +173,6 @@ a {
 .rentq-navbar {
   background-color: var(--rentq-orange);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  height: 70px;
-  padding: 0;
-  display: flex;
-  align-items: center;
   position: sticky;
   top: 0;
   left: 0;
@@ -189,6 +185,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 70px;
   width: 100%;
 }
 
@@ -305,6 +302,7 @@ a {
   border-radius: 50px;
   font-size: 0.82rem;
   font-weight: 800;
+  white-space: nowrap;
   transition: var(--transition-smooth);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
@@ -325,6 +323,60 @@ a {
   justify-content: center;
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Full-Width Clean Mobile Dropdown Menu */
+.nav-mobile-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--rentq-orange);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.3);
+  padding: 18px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 1001;
+}
+
+.nav-mobile-link {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 6px 0;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.nav-mobile-link:hover {
+  opacity: 0.85;
+}
+
+.nav-mobile-book-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #000000;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  margin-top: 8px;
+  width: 100%;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  transition: background 0.2s ease;
+}
+
+.nav-mobile-book-btn:hover {
+  background: #1e293b;
 }
 
 @media (max-width: 992px) {
@@ -3943,7 +3995,11 @@ a {
   }
 
   .rentq-navbar {
-    padding: 10px 0;
+    padding: 0;
+  }
+
+  .nav-inner-rentq {
+    height: 58px;
   }
 
   .brand-symbol {
@@ -3972,9 +4028,9 @@ a {
     gap: 8px;
   }
 
+  /* Hide topbar Book Now pill on mobile so it never crowds or overflows into 2 lines */
   .nav-book-pill {
-    padding: 7px 14px;
-    font-size: 0.78rem;
+    display: none !important;
   }
 
   .mobile-toggle-btn {
