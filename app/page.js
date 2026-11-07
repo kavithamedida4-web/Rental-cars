@@ -855,7 +855,7 @@ export default function Home() {
                           loading="lazy"
                           decoding="async"
                           width={480}
-                          height={320}
+                          height={270}
                         />
                       </div>
 
@@ -1793,7 +1793,7 @@ export default function Home() {
                     height={70}
                     loading="lazy"
                     decoding="async"
-                    style={{ width: "120px", height: "70px", objectFit: "contain", borderRadius: "8px", background: "#f8f9fa" }}
+                    style={{ width: "120px", height: "70px", objectFit: "cover", borderRadius: "8px", background: "#f8f9fa" }}
                   />
                   <div>
                     <h3 style={{ fontSize: "1.25rem", fontWeight: 700 }}>{selectedCarModal.name}</h3>
