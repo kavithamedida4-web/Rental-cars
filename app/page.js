@@ -886,7 +886,7 @@ export default function Home() {
                       <button
                         type="button"
                         className="booking-submit-whatsapp-btn"
-                        style={{ padding: "10px 16px", fontSize: "0.86rem", borderRadius: "10px", marginTop: 0 }}
+                        style={{ padding: "10px 16px", fontSize: "0.86rem", borderRadius: "10px", marginTop: 0, background: "#000000", color: "#ffffff" }}
                         onClick={() => setSelectedCarModal(car)}
                       >
                         <span>Book Now</span>
