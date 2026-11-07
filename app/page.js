@@ -417,11 +417,12 @@ export default function Home() {
             </div>
           </a>
 
-          {/* Center Navigation Links (Home, About, Services, Gallery) */}
+          {/* Center Navigation Links (Home, About, Services, Fleet, Gallery) */}
           <ul className="nav-center-menu">
             <li><a href="#hero" className="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#fleet">Fleet</a></li>
             <li><a href="#gallery">Gallery</a></li>
           </ul>
 
@@ -453,6 +454,7 @@ export default function Home() {
             <a href="#hero" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Home</a>
             <a href="#about" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>About</a>
             <a href="#services" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Services</a>
+            <a href="#fleet" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Fleet</a>
             <a href="#gallery" onClick={() => setMobileMenuOpen(false)} style={{ color: "#ffffff", fontWeight: 700 }}>Gallery</a>
             <a
               href="#contact"
@@ -516,7 +518,7 @@ export default function Home() {
 
               {/* Action Buttons */}
               <div className="hero-custom-btn-group">
-                <a href="#gallery" className="hero-custom-btn-primary">
+                <a href="#fleet" className="hero-custom-btn-primary">
                   <span>Explore Fleet</span>
                   <ArrowUpRight size={16} />
                 </a>
@@ -536,7 +538,7 @@ export default function Home() {
 
             {/* Mobile-Only Feature Bar matching user reference */}
             <div className="hero-mobile-features-bar">
-              <a href="#gallery" className="hero-mobile-feature-col">
+              <a href="#fleet" className="hero-mobile-feature-col">
                 <Car size={24} className="hero-mf-icon" />
                 <span className="hero-mf-title">Explore</span>
                 <span className="hero-mf-sub">Fleet</span>
@@ -658,7 +660,7 @@ export default function Home() {
 
                 {/* Discover Fleet Button (Navy matching reference styling) */}
                 <div className="about-modern-action-wrap">
-                  <a href="#gallery" className="about-modern-btn">
+                  <a href="#fleet" className="about-modern-btn">
                     DISCOVER FLEET
                   </a>
                 </div>
@@ -764,7 +766,7 @@ export default function Home() {
             4. FLEET CATALOG SECTION (Fourth in sequence, after Services)
             - Professional & Designed Matching Image 2
             ======================================================== */}
-        <section className="fleet-section-premium" id="gallery">
+        <section className="fleet-section-premium" id="fleet">
           <div className="container">
             {/* Header matching Image 2 */}
             <div className="fleet-showcase-header">
@@ -1196,7 +1198,7 @@ export default function Home() {
             5.5 PHOTO GALLERY SECTION (After Testimonials)
             - Light background, 3-column masonry grid
             ======================================================== */}
-        <section className="photo-gallery-section" id="photo-gallery">
+        <section className="photo-gallery-section" id="gallery">
           <div className="container">
             <div className="gallery-header-center">
               <div className="section-tag">
@@ -1664,8 +1666,13 @@ export default function Home() {
                   </a>
                 </li>
                 <li className="footer-link-item">
-                  <a href="#gallery" className="footer-nav-link">
+                  <a href="#fleet" className="footer-nav-link">
                     <span className="footer-nav-chevron">&gt;</span> Our Fleet
+                  </a>
+                </li>
+                <li className="footer-link-item">
+                  <a href="#gallery" className="footer-nav-link">
+                    <span className="footer-nav-chevron">&gt;</span> Photo Gallery
                   </a>
                 </li>
                 <li className="footer-link-item">
