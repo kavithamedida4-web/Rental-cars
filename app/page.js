@@ -698,7 +698,7 @@ export default function Home() {
             ======================================================== */}
         <section className="section-padding bg-warm" id="services">
           <div className="container">
-            {/* Header row matching Reference Image */}
+            {/* Header row */}
             <div className="svc-ref-header">
               <div className="svc-ref-header-left">
                 <div className="svc-ref-tag">
@@ -710,12 +710,6 @@ export default function Home() {
                 <h2 className="svc-ref-title">
                   Ways To Get Your Car In Hyderabad
                 </h2>
-              </div>
-              <div className="svc-ref-header-right">
-                <a href="#gallery" className="svc-ref-header-btn">
-                  <span>VIEW ALL CARS</span>
-                  <ArrowRight size={14} />
-                </a>
               </div>
             </div>
 

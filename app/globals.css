@@ -955,16 +955,12 @@ a {
    - Card 2: Crisp White with Dark Link & Arrow
    ======================================================== */
 .svc-ref-header {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 24px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
+  max-width: 960px;
+  margin: 0 auto 36px auto;
 }
 
 .svc-ref-header-left {
-  max-width: 620px;
+  max-width: 720px;
 }
 
 .svc-ref-tag {
