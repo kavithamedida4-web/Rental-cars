@@ -509,7 +509,7 @@ export default function Home() {
           {/* Background Image: 4K Ultra High-Res Custom Render Matching User Style */}
           <div className="hero-custom-bg-wrap">
             <picture>
-              <source media="(max-width: 768px)" srcSet="/images/hero-mobile-orange-bg.jpg" />
+              <source media="(max-width: 768px)" srcSet="/images/hero-mobile-custom.jpg" />
               <img
                 src="/images/hero-orange-split-4k.jpg"
                 alt="Royal Cars Hyderabad - Daily, Weekly & Monthly Self Drive Rentals"
